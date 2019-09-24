@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="signup-container">
+    <div class="signup-container signup_login">
         <header>
             <img src="assets/logo.png" alt="Team Dinlas">
             <h1>A Better Way to Learn from an expert</h1>
             <p>Already signed up? <a href="login.html">Log In</a></p>
         </header>
-        <form action="" method="POST">
+        <form action="" method="POST" class="signup-form">
             <label for="fullname">
                 <input type="text" name="fullname" id="fullname" placeholder="Full Name">
             </label>
@@ -36,12 +37,13 @@
 
             <p>By clicking "Continue with Google/Email" above, you acknowledge that you have read and understood, and agree to Lucid's <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
 
-            <button>Continue with Email</button>
+            <button id="SignUpWithEmail">Continue with Email</button>
+            
+            <hr>
+    
+            <button>Continue with Google</button>
         </form>
 
-        <hr>
-
-        <button>Continue with Google</button>
     </div>
 </body>
 </html>
