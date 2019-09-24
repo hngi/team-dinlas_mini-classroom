@@ -1,6 +1,6 @@
 # Team Dinlas Mini Classroom Web App
 
-## Overview
+### HNG Stage 3 Task fro Team Dinlas
 
 ## Contributing
 
