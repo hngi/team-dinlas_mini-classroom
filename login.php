@@ -9,7 +9,7 @@ include 'includes/functions.php';
 */
 
 
-if (isset($_POST['login'])) {
+if (isset($_POST['Login'])) {
 
     $email_unsafe = $_POST['email'];
     $pass_unsafe = $_POST['password'];
