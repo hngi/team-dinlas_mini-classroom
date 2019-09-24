@@ -6,11 +6,24 @@
 
 button {
     background: none;
+    color: #00AEFF;
 }
 
 body {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #00AEFF
+}
+
+:-ms-input-placeholder {
+    color: #00AEFF
+}
+
+::placeholder {
+    color: #00AEFF
 }
 
 p, h1, img, button {
@@ -44,7 +57,7 @@ hr:before {
 }
 
 .signup_login {
-    margin: 4.5rem auto 3rem;
+    margin: 3rem auto 3rem;
     padding: 1.5rem;
     text-align: center;
 }
@@ -53,6 +66,10 @@ hr:before {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+}
+
+.signup_login p {
+    color: #777;
 }
 
 .signup_login label {
@@ -71,6 +88,12 @@ hr:before {
 #SignUpWithEmail, #login {
     background-color: #00AEFF;
     color: white;
+}
+
+#SignUpWithGoogleEmail img {
+    margin: 0;
+    vertical-align: top;
+    padding-right: 16px;
 }
 
 .login-form p {
