@@ -12,8 +12,12 @@ body {
     font-size: 100%;
 }
 
-p, h1, img {
+p, h1, img, button {
     margin-bottom: 24px;
+}
+
+a {
+    color: #00AEFF;
 }
 
 hr {
@@ -46,7 +50,7 @@ hr:before {
 
 .signup_login form {
     width: 100%;
-    max-width: 480px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -63,7 +67,11 @@ hr:before {
     width: 100%;
 }
 
-#SignUpWithEmail {
+#SignUpWithEmail, #login {
     background-color: #00AEFF;
     color: white;
+}
+
+.login-form p {
+    text-align: right;
 }
