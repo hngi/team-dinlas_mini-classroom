@@ -1,0 +1,74 @@
+#nav1{
+background-color: aqua;
+margin: 0;
+}
+#nav2{
+    background-color:#00AEFF;
+    margin: 0
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+h1{
+    margin: 0;
+    height: 75px;
+}
+i{
+    margin: 0;
+    font-size: 20px;
+}
+img{
+    width: 100px;
+}
+input{
+    margin: 0;
+    border: 0;
+    height: 40px;
+    padding: 0 10px;
+    width: 300px;
+}
+.class{
+    margin-left: 12%;
+    color: white;
+    margin-bottom: 10px;
+}
+a{
+    color: white !important;
+    margin-right: 15px;
+}
+
+a:active{
+    border-bottom: 2px solid black;
+}
+.card{
+    margin-bottom: 5%;
+    align-content: center;
+    align-items: center;
+}
+#bottom {
+   margin-left: 5%;
+}
+#bottom p{
+    color: white;
+    margin: 0;
+}
+.Ibottom{
+    color: white;
+}
+.news input{
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 0
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: 0;
+    height: 30px;
+}
+.news{
+    margin-right: 30px ; 
+}
