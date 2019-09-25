@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700px;
+  font-size: .9em;
+  letter-spacing: .1em;
+}
+
+.navbar-brand img{
+  height: 2.5rem;
+}
+
+.navbar-nav li{
+  padding-right: .7em;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8em;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #00AEFF;
+}
+
+/*Landing Page*/
+.home-inner{
+  background-image: url(assets/landing-img.jpg);
+}
+.caption {
+  width:100%;
+  max-width: 100%;
+  position: absolute;
+  font-weight: 700;
+  color: white;
+  top: 38%;
+}
+.form{
+  width:100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+}
+.btn-md{
+  border-width: medium;
+  border-radius: 0;
+
+}
+.btn-primary {
+  padding: .6rem 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border: none;
+  background-color:#00AEFF;
+  color: white;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border: none;
+  background-color:#00AEFF;
+  color: white;
+}
+footer{
+  width: 100%;
+  height: 2px;
+  background-color: #00AEFF;
+  padding: 5% 5% 10% 5%;
+  color: #FFFFFF;
+}
+.fd{
+  padding: 15px;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+@media (max-width:767px){
+  .form{
+    width:50%;
+    max-width: 100%;
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    justify-content: center;
+  }
+  .footer{
+    width: 100%;
+    height: 100%;
+    background-color: #00AEFF;
+    padding: 5% 5% 10% 5%;
+    color: #FFFFFF;
+  }
+}

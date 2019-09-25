@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    color: #00AEFF;
+    border: 0 none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #00AEFF
+}
+
+:-ms-input-placeholder {
+    color: #00AEFF
+}
+
+::placeholder {
+    color: #00AEFF
+}
+
+p, h1, img, button {
+    margin-bottom: 24px;
+}
+
+a {
+    color: #00AEFF;
+}
+
+hr {
+    margin: 1.5rem auto;
+    position: relative;
+    overflow: visible;
+    border: 1px solid #00AEFF;
+}
+
+hr:before {
+    content: "or";
+    font-size: 18px;
+    padding: 0.5rem;
+    line-height: 20px;
+    background: white;
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 20px;
+}
+
+.signup_login {
+    margin: 3rem auto 3rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.signup_login form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup_login p {
+    color: #777;
+}
+
+.signup_login label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.signup_login input, .signup_login button {
+    border: 1px solid #00AEFF;
+    font-size: 1.2rem;
+    padding: 0.8em 1em 0.5em;
+    
+    width: 100%;
+}
+
+#SignUpWithEmail, #login, .submit {
+    background-color: #00AEFF;
+    color: white;
+    padding: 0.8em 1em 0.5em;
+}
+
+#SignUpWithGoogleEmail img {
+    margin: 0;
+    vertical-align: top;
+    padding-right: 16px;
+}
+
+.login-form p {
+    text-align: right;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #eee;
+}
+
+#header img {
+    margin-bottom: 0;
+    height: 40px;
+    width: auto;
+}
+
+#header form {
+    width: 50%;
+    position: relative;
+}
+
+#header span {
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    color: #777;
+}
+
+#header input, #footer input, #footer .submit {
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+#header input::placeholder, #footer input::placeholder {
+    color: #777;
+    display: none;
+    width: 30px;
+}
+
+.back-nav {
+    padding: 2rem 3rem;
+    background: #00AEFF;
+    color: white;
+}
+
+
+.course-page {
+    width: 80%;
+    margin: 4rem auto;
+    max-width: 910px;
+}
+
+.course-page main, .course-page aside {
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    vertical-align: top;
+}
+
+.course-page input[type="file"] {
+    margin-bottom: 1.5rem;
+}
+
+.courses h2 {
+    vertical-align: sub;
+    font-weight: normal;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+
+.courses h2 span {
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    vertical-align: sub;
+    display: none;
+}
+
+.courses h2:hover {
+    color: #00AEFF;
+}
+
+.courses h2:hover span {
+    display: inline;
+}
+
+#footer {
+    width: 100%;
+    background: #00AEFF;
+    color: white;
+    padding: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1.5em;
+}
+
+#footer div {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 3rem;
+    
+}
+#footer li {
+    display: inline-block;
+}
+
+#footer h2 {
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+}
+
+#footer .submit {
+    background: black;
+}
+
+@media screen and (min-width: 1000px) {
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    #footer div {
+        margin-bottom: 0;
+    }
+
+        
+    .course-page aside {
+        max-height: 380px;
+        overflow-y: scroll;
+    }
+}
