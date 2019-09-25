@@ -4,7 +4,7 @@
     font-family: 'Lato', sans-serif;
 }
 #home{
-    background: url('homepage-img.png') no-repeat;
+    background: url('assets/homepage-img.png') no-repeat;
     display: table;
     height: 500px;
     position: relative;
