@@ -7,6 +7,11 @@
 button {
     background: none;
     color: #00AEFF;
+    border: 0 none;
+}
+
+li {
+    list-style-type: none;
 }
 
 body {
@@ -81,13 +86,14 @@ hr:before {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
     padding: 0.8em 1em 0.5em;
-
+    
     width: 100%;
 }
 
-#SignUpWithEmail, #login {
+#SignUpWithEmail, #login, .submit {
     background-color: #00AEFF;
     color: white;
+    padding: 0.8em 1em 0.5em;
 }
 
 #SignUpWithGoogleEmail img {
@@ -98,4 +104,142 @@ hr:before {
 
 .login-form p {
     text-align: right;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #eee;
+}
+
+#header img {
+    margin-bottom: 0;
+    height: 40px;
+    width: auto;
+}
+
+#header form {
+    width: 50%;
+    position: relative;
+}
+
+#header span {
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    color: #777;
+}
+
+#header input, #footer input, #footer .submit {
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+#header input::placeholder, #footer input::placeholder {
+    color: #777;
+    display: none;
+    width: 30px;
+}
+
+.back-nav {
+    padding: 2rem 3rem;
+    background: #00AEFF;
+    color: white;
+}
+
+
+.course-page {
+    width: 80%;
+    margin: 4rem auto;
+    max-width: 910px;
+}
+
+.course-page main, .course-page aside {
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    vertical-align: top;
+}
+
+.course-page input[type="file"] {
+    margin-bottom: 1.5rem;
+}
+
+.courses h2 {
+    vertical-align: sub;
+    font-weight: normal;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+
+.courses h2 span {
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    vertical-align: sub;
+    display: none;
+}
+
+.courses h2:hover {
+    color: #00AEFF;
+}
+
+.courses h2:hover span {
+    display: inline;
+}
+
+#footer {
+    width: 100%;
+    background: #00AEFF;
+    color: white;
+    padding: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1.5em;
+}
+
+#footer div {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 3rem;
+    
+}
+#footer li {
+    display: inline-block;
+}
+
+#footer h2 {
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+}
+
+#footer .submit {
+    background: black;
+}
+
+@media screen and (min-width: 1000px) {
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    #footer div {
+        margin-bottom: 0;
+    }
+
+        
+    .course-page aside {
+        max-height: 380px;
+        overflow-y: scroll;
+    }
 }
