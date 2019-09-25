@@ -1,8 +1,6 @@
-# Muses Net Worth Calculator
+# Team Dinlas Mini Classroom Web App
 
-## Overview
 
-This is one of the stage 3 projects built by Team Muses. A Net Worth Calculator web app.
 
 ## Contributing
 
