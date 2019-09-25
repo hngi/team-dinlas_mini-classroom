@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+#home{
+    background: url('homepage-img.png') no-repeat;
+    display: table;
+    height: 500px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+.header{
+    height: 100vh;
+}
+.navbar-style{
+    box-shadow: 0 5px 10px #efefef;
+}
+.landing-items{
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+footer{
+    width: 100%;
+    background-color: #00AEFF;
+    padding: 5% 5% 10% 5%;
+    color: #FFFFFF;
+}
+.fa{
+    padding: 15px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.logo{
+    height: 48px;
+    padding: 2px 10px;
+}
+.icon-bar{
+    background: #00AEFF;
+}
+li a{
+    color: #00AEFF;
+}
+@media only screen and (max-width: 650px){
+    #home {
+    height: 250px;
+ }
