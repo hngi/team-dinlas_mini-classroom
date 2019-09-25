@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    color: #00AEFF;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #00AEFF
+}
+
+:-ms-input-placeholder {
+    color: #00AEFF
+}
+
+::placeholder {
+    color: #00AEFF
+}
+
+p, h1, img, button {
+    margin-bottom: 24px;
+}
+
+a {
+    color: #00AEFF;
+}
+
+hr {
+    margin: 1.5rem auto;
+    position: relative;
+    overflow: visible;
+    border: 1px solid #00AEFF;
+}
+
+hr:before {
+    content: "or";
+    font-size: 18px;
+    padding: 0.5rem;
+    line-height: 20px;
+    background: white;
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 20px;
+}
+
+.signup_login {
+    margin: 3rem auto 3rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.signup_login form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup_login p {
+    color: #777;
+}
+
+.signup_login label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.signup_login input, .signup_login button {
+    border: 1px solid #00AEFF;
+    font-size: 1.2rem;
+    padding: 0.8em 1em 0.5em;
+
+    width: 100%;
+}
+
+#SignUpWithEmail, #login {
+    background-color: #00AEFF;
+    color: white;
+}
+
+#SignUpWithGoogleEmail img {
+    margin: 0;
+    vertical-align: top;
+    padding-right: 16px;
+}
+
+.login-form p {
+    text-align: right;
+}
