@@ -152,7 +152,7 @@ hr:before {
 }
 
 #header input, #footer input, #footer .submit, .faq-searchform input {
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem 1.4rem;
     border: none;
 }
@@ -221,7 +221,6 @@ hr:before {
     padding: 2rem;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 1.5em;
 }
 
 #footer div {
