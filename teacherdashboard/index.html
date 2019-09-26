@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<head>
+<title>Teacher Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="theme-color" content="#5cb" />
+<script type="application/x-javascript"> 
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<!-- bootstrap-css -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font.css" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet">
+ <script src="js/jquery2.0.3.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+<script src="js/raphael-min.js"></script>
+<script src="js/morris.js"></script>
+
+<link rel="stylesheet" href="css/morris.css">
+<!-- //font-awesome icons -->
+
+<!--//skycons-icons-->
+</head>
+<body class="dashboard-page">
+		
+	<script>
+	        var theme = $.cookie('protonTheme') || 'default';
+	        $('body').removeClass (function (index, css) {
+	            return (css.match (/\btheme-\S+/g) || []).join(' ');
+	        });
+	        if (theme !== 'default') $('body').addClass(theme);
+        </script>
+	<nav class="main-menu">
+		<ul>
+			<li>
+				<a href="index.html">
+					<i class="fa fa-home nav_icon"></i>
+					<span class="nav-text">
+					Dashboard
+					</span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="logout">
+			<li>
+			<a href="login.html">
+			<i class="icon-off nav-icon"></i>
+			<span class="nav-text">
+			Logout
+			</span>
+			</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="wrapper scrollable">
+		<nav class="user-menu">
+			<a href="javascript:;" class="main-menu-access">
+			<i class="icon-proton-logo"></i>
+			<i class="icon-reorder"></i>
+			</a>
+		</nav>
+		<section class="title-bar">
+			<div class="logo">
+				<h1 style="font-size:16px;"><a href="index.html">MiniClassroom</a></h1>
+			</div>
+			
+
+			<div class="header-right">
+				<div class="profile_details_left">
+					<div class="header-right-left">
+						<!--notifications of menu start -->
+					
+							<li class="dropdown head-dpdn">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></a></button>
+								
+							</li>
+							
+							<div class="clearfix"> </div>
+						</ul>
+					</div>
+						<div class="full-screen">
+				<section class="full-top">
+					<button id="toggle"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>	
+				</section>
+			</div>
+					<div class="profile_details">		
+						<ul>
+							<li class="dropdown profile_details_drop">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<div class="profile_img">	
+										<span class="prfil-img"><i class="fa fa-user" aria-hidden="true"></i></span> 
+										<div class="clearfix"></div>	
+									</div>	
+								</a>
+								<ul class="dropdown-menu drp-mnu">
+								
+									<li> <a href="#"><i class="fa fa-user"></i> Logged In As DevFeranmi</a> </li> 
+									<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</section> 
+		 
+	
+
+		<div class="main-grid">
+				<div class="modal" id="myModal">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+					  
+							<!-- Modal Header -->
+							<div class="modal-header">
+							  <h4 class="modal-title">Create a  Class</h4>
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+					  
+							<!-- Modal body -->
+							<div class="modal-body">
+							<form>
+								<div class="form-group has-success">
+									
+									<div class="col-md-8">
+										<div class="input-group input-icon right">
+											<span class="input-group-addon">
+												<i class="fa fa-user"></i>
+											</span>
+											<input id="classname" class="form-control1" type="text" placeholder="Class name" required>
+										</div>
+									</div>
+									
+								</div>
+								<br><br>	
+									<div class="form-group has-success">
+								
+									<div class="col-md-8">
+										<div class="input-group input-icon right">
+											<span class="input-group-addon">
+												<i class="fa fa-edit"></i>
+											</span>
+											<textarea id="classdes" class="form-control1"placeholder="Class Description" required></textarea>
+										</div>
+									</div>
+									
+								</div>	
+									
+								<br><br>	
+								<div class="form-group has-success">
+							
+								<div class="col-md-8">
+									<div class="input-group input-icon right">
+										<span class="input-group-addon">
+											<i class="fa fa-link"></i>
+										</span>
+										<input id="classlink" class="form-control1" type="url" placeholder="Class Video Link" required>
+									</div>
+								</div>
+								
+							</div>	
+								
+							<br><br>	
+							<div class="form-group has-success">
+						
+						
+								
+									<div class="col-md-8">
+										<div class="input-group input-icon right">
+											<span class="input-group-addon">
+												<i class="fa fa-upload"></i>
+											</span>
+											<input id="classlink" class="form-control1"type="file" required>
+										</div>
+									</div>
+									<div class="col-sm-2">
+											<p class="help-block"><i class="fa fa-arrow-left"></i>PDF attachment</p>
+										</div>
+								</div>
+							
+														
+								</form>
+							</div>
+							<input type="hidden" id="wichone" />
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								
+							  <button type="submit" class="btn btn-success">Create Class <I class="fa fa-arrow-right"></I></button>
+						
+							</div>
+					  
+						  </div>
+						</div>
+					  </div>
+					  <!-- <script>
+						  let state = "";
+					  document.getElementById("att").addEventListener("click",function(){
+						  document.getElementById("opts").style.display="block";
+					  })
+					  document.getElementById("f12").addEventListener("click",function(){
+						state="1";
+						document.getElementById("linktovideo").style.display="block";
+										  })
+
+					  </script> -->
+		
+			
+			
+		
+			
+		</div>
+		<div class="panel panel-widget top-grids">
+		Your Courses 
+<div class="agile-grids">
+				<div class="col-md-4 charts-right">
+					<!-- area-chart -->
+					<div class="area-grids">
+						<div class="area-grids-heading">
+							<h3>Angular Class</h3>
+						</div>
+							Introduction to Software Programming with Angular
+
+					<BR>
+					230 <i class="fa fa-eye"></i>
+					
+					</div>
+					<!-- //area-chart -->
+				</div>
+				<div class="col-md-8 chart-left">
+					<!-- updating-data -->
+					<div class="area-grids">
+							<div class="area-grids-heading">
+								<video width="100%" height="100%" controls>
+									<source src="movie.mp4" type="video/mp4">
+									<source src="video.ogg" type="video/ogg">
+								  Your browser does not support the video tag.
+								  </video>
+							</div>
+						
+						<BR>
+						
+							
+	
+						</div>
+					<!-- //updating-data -->
+					
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		
+
+
+
+
+			
+			</div>
+		<!-- footer -->
+		
+		<!-- //footer -->
+	</section>
+	<script src="js/jquery2.0.3.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/screenfull.js"></script>
+		<script>
+		$(function () {
+			$('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+
+			if (!screenfull.enabled) {
+				return false;
+			}
+
+			
+
+			$('#toggle').click(function () {
+				screenfull.toggle($('#container')[0]);
+			});	
+		});
+		</script>
+<!-- charts -->
+
+<!-- //charts -->
+<!--skycons-icons-->
+<script>
+	let opened = 0;
+document.getElementById("show").addEventListener("click",function(){
+	if(opened==0){
+	document.getElementById("courses").style.display="block";
+	opened = 1;
+	}
+	else {
+		document.getElementById("courses").style.display="none";
+	opened = 0;
+	}
+});
+</script>
+	</script>
+<script src="js/skycons.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/proton.js"></script>
+	<style>
+	#att{
+		color:#5cb85c;
+		font-size:15px;
+		
+	}
+	#f12{
+		font-size:12px;
+	}
+	#f10{
+		font-size:10px;
+	}
+	</style>
+</body>
+</html>
