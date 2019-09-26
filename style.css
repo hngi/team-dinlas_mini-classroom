@@ -10,8 +10,21 @@ button {
     border: 0 none;
 }
 
+.container {
+    position: relative;
+}
+.container:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 .text-center {
     text-align: center;
+}
+
+.main-color {
+    color: #00AEFF;
 }
 
 li {
@@ -248,6 +261,52 @@ hr:before {
 }
 
 
+.profile {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #00AEFF;
+    color: white;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.profile li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.add-course {
+    padding: 3rem 1.5rem;
+}
+.add-course label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.add-course input, .add-course select, .add-course textarea {
+    padding: 1rem;
+    width: 100%;
+}
+
+.add-course label span {
+    color: red;
+}
+
+
 @media screen and (min-width: 1000px) {
 
     #footer {
@@ -268,5 +327,38 @@ hr:before {
 
     .faq-page li {
         width: 40%;
+    }
+
+    .profile {
+        width: 30%;
+        float: left;
+        /* min-height: 100%; */
+        position: absolute;
+        height: 100%;
+    }
+
+    .add-course {
+        width: 70%;
+        position: relative;
+        left: 30%;
+    }
+    .profile li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .add-course form {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .add-course label {
+        display: inline-block;
+        width: 25%;
+    }
+
+    .add-course input, .add-course select, .add-course textarea {
+        width: 70%;
+        vertical-align: top;
     }
 }
