@@ -34,6 +34,7 @@ li {
 body {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
 }
 
 ::-webkit-input-placeholder {
@@ -289,7 +290,7 @@ hr:before {
     text-decoration: underline;
 }
 
-.add-course {
+.add-course, .community {
     padding: 3rem 1.5rem;
 }
 .add-course label {
@@ -306,7 +307,31 @@ hr:before {
     color: red;
 }
 
+.community aside {
+    margin-bottom: 2rem;
+}
 
+.community aside a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.community aside ul {
+    border: 1px solid #00AEFF;
+    margin-top: 1rem;
+}
+
+.community aside li {
+    border-bottom: 1px solid #00AEFF;
+    padding: 0.5rem 1.5rem;
+}
+
+.community .topic {
+    color: white;
+    background: #00AEFF;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
 @media screen and (min-width: 1000px) {
 
     #footer {
@@ -361,4 +386,19 @@ hr:before {
         width: 70%;
         vertical-align: top;
     }
+
+    .community aside {
+        width: 24%;
+        vertical-align: top;
+    }
+
+    .community main {
+        width: 40%;
+        margin: 0 5%;
+    }
+
+    .community aside, .community main {
+        display: inline-block;
+    }
+
 }
