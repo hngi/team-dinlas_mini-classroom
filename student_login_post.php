@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
 
     if ($counter == 0) {
         addAlert('error', 'Invalid Email or Password! Try again');
-        echo "<script>document.location='index.php'</script>";
+        echo "<script>document.location='student_login.php'</script>";
     } else {
 
         $row = mysqli_fetch_array($query);

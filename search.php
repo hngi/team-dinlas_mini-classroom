@@ -78,11 +78,8 @@ if ($lectures == 0) {
                                 <span class="text-muted text-small"><b><?php echo $students ?> Students | <?php echo $lectures_count ?> Lectures</b></span>
                                 <span class="text-muted text-small" style="float: right">Created: <?php echo date("l j, M Y", strtotime($row['date_created'])); ?></span>
                                 <br>
-                                <i class="fa fa-star text-info"></i>
-                                <i class="fa fa-star text-info"></i>
-                                <i class="fa fa-star text-info"></i>
-                                <i class="fa fa-star text-info"></i>
-                                <b>4 / 5</b> (734)
+                                <?php echo getClassRating($con, $row['class_id']); ?>
+
                             </div>
                         </div>
 

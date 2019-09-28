@@ -1,5 +1,5 @@
 
-
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +19,14 @@
             <h1>Welcome back!</h1>
             <p>New to DiClass? <a href="teacher_signup.php">Sign Up</a></p>
             <br>
-            <?php 
-            include 'includes/functions.php';
-            
-            echo showAlert(); ?>
+            <?php
+include 'includes/functions.php';
+
+echo showAlert();?>
+
         </header>
         <form action="teacher_login_post.php" method="POST" class="login-form">
-           
+
             <label for="email">
                 <input type="email" name="email" id="email" placeholder="example@gmail.com">
             </label>
@@ -33,9 +34,16 @@
             <label for="password">
                 <input type="password" name="password" id="password" placeholder="Password">
             </label>
-    
+
+            <label for="type">
+                <select name="type">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </label>
+
             <button type="submit" name="login" id="login">Login</button>
-            <p><a href="#">Forgot Password?</a></p>
+            <p><a href="index.php" class="text-center"> << Go Back Home</a></p>
         </form>
 
     </div>

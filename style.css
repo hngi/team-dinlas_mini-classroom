@@ -104,6 +104,7 @@ hr:before {
 }
 
 .signup_login input,
+.signup_login select,
 .signup_login button {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
@@ -111,6 +112,15 @@ hr:before {
 
     width: 100%;
 }
+
+/* signup_login input,
+.signup_login button {
+    border: 1px solid #00AEFF;
+    font-size: 1.2rem;
+    padding: 0.8em 1em 0.5em;
+
+    width: 100%;
+} */
 
 #SignUpWithEmail,
 #login,

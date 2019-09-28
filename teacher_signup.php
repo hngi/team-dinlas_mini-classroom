@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,12 +50,20 @@
                 <input type="password" name="confirm_password" id="confirm-password" placeholder="Confirm Password" >
             </label>
 
+            <label for="type">
+            <select name="type">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+            </label>
+
             <p>By clicking "Continue with Google/Email" above, you acknowledge that you have read and understood, and agree to Lucid's <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
 
             <button id="SignUpWithEmail" name="signup" type="submit">Continue with Email</button>
             
             
         </form>
+        <p><a href="index.php" class="text-center"> << Go Back Home</a></p>
 
     </div>
 </body>
