@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="homepage.css">
 	<link rel="stylesheet" href="fixed.css">
 	<link rel="stylesheet" href="style.css">
+	<link href="assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+	<link href="assets/landing-page.min.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -21,8 +23,8 @@
 <div id="home">
 
 <!--Navigation-->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-	<a class="navbar-brand" href="#"><img src="assets/mini-classroom logo.png"></a>
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+	<a class="navbar-brand" href="#"><img src="assets/logo.png"></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -32,16 +34,16 @@
 				<a class="nav-link" href="#home">Home</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="#contact-us">Contact Us</a>
+					<a class="nav-link" href="faq.html">FAQ</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="#become-a-tutor">Become a tutor</a>
+					<a class="nav-link text-bolded" href="teacher_signup.php">Become a tutor</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="login.html">Log in</a>
+					<a class="nav-link" href="student_login.php">Student</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="signup.html">Sign up</a>
+					<a class="nav-link" href="teacher_login.php">Teacher</a>
 			</li>
 		</ul>
 	</div>
@@ -56,29 +58,100 @@
 	</div>
 </div>
 <div class="caption text-center">
-	<h2>Learn from an Expert</h2>
-	<h5>Engage on one-on-one with a tutor and get hands on training</h5>
+	<h1>Learn from Expert Tutors without paying a dime!</h1>
+  <h5>Engage on one-on-one with a tutor and get hands on training</h5>
+  <br>
+  
+<a href="teacher_signup.php" class="btn btn-info btn-lg"> <i class="icon-user"></i> Start Teaching</a>  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+<a href="student_signup.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Start Learning</a> 
 </div>
-<form class="form form-inline justify-content-center">
-	<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	<button class="btn btn-primary" type="button">
-        <i class="fa fa-search"></i>
-      </button>
-</form>
-<!--End Landing page section-->
+
+<!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-info"></i>
+            </div>
+            <h3>Access over 2000 Online Classes</h3>
+            <p class="lead mb-0">Explore a variety of awesome classes!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-info"></i>
+            </div>
+            <h3>Expert Tutor</h3>
+            <p class="lead mb-0">Find the right Teacher for you!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-info"></i>
+            </div>
+            <h3>No Charges</h3>
+            <p class="lead mb-0">Learn so much with no payments!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+                <h2>Get personalized recommendations</h2>
+			<p>Answer a few questions for your top picks and  get recommendations suited to you.</p>
+			<a class="btn btn-secondary btn-md" href="#Get-started">Get Started</a>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+    
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">What our students are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+            <h5>John D.</h5>
+            <p class="font-weight-light mb-0">"This platform is amazing! Thanks you!"</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+            <h5>Jane D.</h5>
+            <p class="font-weight-light mb-0">"I have learnt so much in no time."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free classes available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </div>
 <!--End Home Section-->
 
-<!--Start Get Started Section-->
-<div id="contact" class="offset">
-<div class="col-12 narrow text-center">
-	<h2>Get personalized recommendations</h2>
-	<p>Answer a few questions for your top picks and  get recommendations suited to you.</p>
-	<a class="btn btn-secondary btn-md" href="#Get-started">Get Started</a>
-</div>
-</div>
-<!--End Get Started Section-->
 
 <!--Start Footer-->
 <footer id="footer">

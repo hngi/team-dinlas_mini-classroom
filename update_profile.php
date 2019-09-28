@@ -4,27 +4,29 @@
 include 'includes/db_connection.php';
 include 'includes/functions.php';
 
-if (isset($_POST['add'])) {
+if (isset($_POST['edit'])) {
     $fullname = $_POST['fullname'];
     $email = $_POST['email'];
     $bio = $_POST['bio'];
-    $type = $_POST['type'];
-    $id = $_POST['id'];
+    $phone = $_POST['phone'];
+    $type = $_SESSION['type'];
+    $id = $_SESSION['id'];
 
-    if ($type == 'teachers') {
+    if ($type == 'teacher') {
 
         if (empty($_FILES['picture']['tmp_name'])) {
 
-            mysqli_query($con, "UPDATE teachers SET fullname = '$fullname', email = '$email', bio = '$bio' WHERE teacher_id = '$id'") or die(mysqli_error($con));
+            mysqli_query($con, "UPDATE teachers SET fullname = '$fullname', email = '$email', bio = '$bio', phone = '$phone' WHERE teacher_id = '$id'") or die(mysqli_error($con));
 
         } else {
 
             $target_dir = 'assets/teacher_photos/';
-            $target_file = $target_dir . basename($_FILES['picture']['name']);
+            $time = time();
+            $target_file = $target_dir . $time.'_'. basename($_FILES['picture']['name']);
             $uploadOk = 1;
             $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
 
-            mysqli_query($con, "UPDATE teachers SET fullname = '$fullname', email = '$email', bio = '$bio', teacher_photos = '$target_file' WHERE teacher_id = '$id'") or die(mysqli_error($con));
+            mysqli_query($con, "UPDATE teachers SET fullname = '$fullname', email = '$email', bio = '$bio', phone = '$phone', teacher_photo = '$target_file' WHERE teacher_id = '$id'") or die(mysqli_error($con));
 
             //after sql query
             move_uploaded_file($_FILES['picture']['tmp_name'], $target_file);
@@ -38,16 +40,17 @@ if (isset($_POST['add'])) {
         
 if (empty($_FILES['picture']['tmp_name'])) {
 
-    mysqli_query($con, "UPDATE students SET fullname = '$fullname', email = '$email', bio = '$bio' WHERE student_id = '$id'") or die(mysqli_error($con));
+    mysqli_query($con, "UPDATE students SET fullname = '$fullname', email = '$email', bio = '$bio', phone = '$phone' WHERE student_id = '$id'") or die(mysqli_error($con));
 
 } else {
 
     $target_dir = 'assets/student_photos/';
-    $target_file = $target_dir . basename($_FILES['picture']['name']);
+    $time = time();
+    $target_file = $target_dir . $time . '_' . basename($_FILES['picture']['name']);
     $uploadOk = 1;
     $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
 
-    mysqli_query($con, "UPDATE students SET fullname = '$fullname', email = '$email', bio = '$bio', student_photos = '$target_file' WHERE student_id = '$id'") or die(mysqli_error($con));
+    mysqli_query($con, "UPDATE students SET fullname = '$fullname', email = '$email', bio = '$bio', phone = '$phone', student_photo = '$target_file' WHERE student_id = '$id'") or die(mysqli_error($con));
 
     //after sql query
     move_uploaded_file($_FILES['picture']['tmp_name'], $target_file);

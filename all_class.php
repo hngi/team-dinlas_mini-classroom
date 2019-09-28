@@ -7,9 +7,9 @@ include 'includes/functions.php';
 isLoggedIn();
 isStudent();
 
-$student_id = $_SESSION['id'];
+$teacher_id = $_SESSION['id'];
 
-$pageTitle = 'Teacher Dashboard';
+$pageTitle = 'All Classes';
 include 'includes/head.php';
 
 ?>
@@ -24,20 +24,19 @@ include 'includes/header.php';
 include 'includes/student_sidebar.php';
 ?>
         <main class="add-course">
-            <h1 class="text-center main-color">Dashboard</h1>
+            <h1 class="text-center main-color">All Classes</h1>
 
             <?php echo showAlert() ?>
 
             <div class="container">
 
+                <!-- list of lectures -->
             <?php
-$query = mysqli_query($con, "SELECT * FROM class a
-LEFT JOIN student_class b ON a.class_id=b.class_id
-WHERE b.student_id = '$student_id' ORDER BY a.class_id DESC ") or die(mysqli_error($con));
+$query = mysqli_query($con, "SELECT * FROM class ORDER BY class_id DESC") or die(mysqli_error($con));
 $lectures = mysqli_num_rows($query);
 
 if ($lectures == 0) {
-    echo "<h1 class='text-center mt-5'>You dont belong to a Class! Join one <a href='all_class.php'>Here</a></h1>";
+    echo "<h1 class='text-center mt-5'>You have no Class! Create one <a href='create_class.php'>Here</a></h1>";
 } else {
     while ($row = mysqli_fetch_array($query)) {
 
@@ -57,12 +56,12 @@ if ($lectures == 0) {
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-2">
-                            <?php
+                                <?php
 if ($row['class_thumbnail'] == '') {?>
-                                    <img src="assets/logo.png" height="100" width="90">
-                                <?php } else {?>
-                                    <img src="<?php echo $row['class_thumbnail'] ?>" height="100" width="90">
-                              <?php }
+                                        <img src="assets/logo.png" height="100" width="90">
+                                    <?php } else {?>
+                                        <img src="<?php echo $row['class_thumbnail'] ?>" height="100" width="90">
+                                    <?php }
         ?>
                             </div>
                             <div class="col-md-10">

@@ -33,7 +33,7 @@ include 'includes/head.php';
 
                 <!-- list of lectures -->
             <?php
-            $query = mysqli_query($con, "SELECT * FROM class WHERE teacher_id = '$teacher_id'")or die(mysqli_error($con));
+            $query = mysqli_query($con, "SELECT * FROM class WHERE teacher_id = '$teacher_id' ORDER BY class_id DESC ")or die(mysqli_error($con));
             $lectures = mysqli_num_rows($query);
 
             if($lectures == 0){
@@ -57,7 +57,13 @@ include 'includes/head.php';
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-2">
-                                <img src="assets/avatar.png" height="100" width="90">
+                            <?php
+                                if($row['class_thumbnail'] == ''){ ?>
+                                    <img src="assets/logo.png" height="100" width="90">
+                                <?php }else{ ?>
+                                    <img src="<?php echo $row['class_thumbnail'] ?>" height="100" width="90">
+                              <?php }
+                            ?>
                             </div>
                             <div class="col-md-10">
                                 <h4>

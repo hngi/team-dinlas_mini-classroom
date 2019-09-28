@@ -36,8 +36,7 @@ if (isset($_POST['login'])) {
         $_SESSION['id'] = $id;
         $_SESSION['name'] = $name;
         $_SESSION['type'] = 'teacher';
-        // addAlert('success', 'You Successfully Logged in');
-        //TODO: Repace with `success.php` with success page
+        addAlert('success', 'You Successfully Logged in');
         echo "<script type='text/javascript'>document.location='teacher_dashboard.php'</script>";
     }
 } else {

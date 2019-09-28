@@ -47,6 +47,9 @@ if ($lectures == 0) {
         $std_query = mysqli_query($con, "SELECT * FROM student_class WHERE class_id = '$cid'") or die(mysqli_error($con));
         $students = mysqli_num_rows($std_query);
 
+        $l_query = mysqli_query($con, "SELECT * FROM class_items WHERE class_id = '$cid'") or die(mysqli_error($con));
+        $lectures_count = mysqli_num_rows($l_query);
+
         ?>
 
                 <!-- Start Class Card -->
@@ -55,7 +58,13 @@ if ($lectures == 0) {
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-2">
-                                <img src="assets/avatar.png" height="100" width="90">
+                                <?php
+                                    if ($row['class_thumbnail'] == '') {?>
+                                        <img src="assets/logo.png" height="100" width="90">
+                                    <?php } else {?>
+                                        <img src="<?php echo $row['class_thumbnail'] ?>" height="100" width="90">
+                                    <?php }
+                                ?>
                             </div>
                             <div class="col-md-10">
                                 <h4>
@@ -64,7 +73,7 @@ if ($lectures == 0) {
                                     </b>
                                 </h4>
                                 <br>
-                                <span class="text-muted text-small"><b><?php echo $students ?> Students</b></span>
+                                <span class="text-muted text-small"><b><?php echo $students ?> Students | <?php echo $lectures_count ?> Lectures</b></span>
                                 <span class="text-muted text-small" style="float: right">Created: <?php echo date("l j, M Y", strtotime($row['date_created'])); ?></span>
                                 <br>
                                 <i class="fa fa-star text-info"></i>

@@ -4,7 +4,21 @@
 include 'includes/db_connection.php';
 include 'includes/functions.php';
 
-$pageTitle = 'Create a New Class';
+if (!isset($_GET['id'])) {
+    header('Location: index.php');
+    exit();
+}
+$class_id = $_GET['id'];
+
+$q = mysqli_query($con, "SELECT * FROM class
+WHERE class_id = '$class_id'
+
+") or die(mysqli_error($con));
+$class_row = mysqli_fetch_array($q);
+
+$classTitle = $class_row['title'];
+
+$pageTitle = 'Editing '.$classTitle.' Class';
 include 'includes/head.php';
 
 ?>
@@ -20,17 +34,18 @@ include 'includes/teacher_sidebar.php';
 ?>
 
         <main class="add-course">
-            <h1 class="text-center main-color">Create a Class</h1>
+            <h1 class="text-center main-color">Edit '<?php echo $classTitle ?>' Class</h1>
             <?php echo showAlert() ?>
 
 
             <div class="container">
 
-                <form action="create_class_post.php" method="POST" enctype="multipart/form-data">
+                <form action="edit_class_post.php" method="POST">
+                <input type="hidden" name="class_id" value="<?php echo $class_id ?>">
 
                 <p>
-                    <label for="title">Enter Class Title <span>*</span></label>
-                    <input type="text" name="title" required autocomplete>
+                    <label for="title"> Class Title <span>*</span></label>
+                    <input type="text" name="title" value="<?php echo $class_row['title'] ?>" required autocomplete>
                 </p>
                 <p>
                     <label for="level">Level <span>*</span></label>
@@ -41,15 +56,11 @@ include 'includes/teacher_sidebar.php';
                     </select>
                 </p>
                 <p>
-                    <label for="youtube">Image Thumbnail <span>*</span>  </label>
-                    <input type="file" name="thumb" required>
-                </p>
-                <p>
                     <label for="description">Description<span>*</span></label>
-                    <textarea name="desc" id="description" cols="30" rows="5"></textarea>
+                    <textarea name="desc" id="description" cols="30" rows="5"><?php echo $class_row['title'] ?></textarea>
                 </p>
                 
-                <button type="submit" name="create" class="submit">Submit</button>
+                <button type="submit" name="edit" class="submit">Submit</button>
             </form>
 
 

@@ -38,7 +38,7 @@ include 'includes/teacher_sidebar.php';
 
             <div class="container">
 
-                <form action="add_item_post.php" method="POST">
+                <form action="add_item_post.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="class_id" value="<?php echo $class_id ?>">
 
                 <p>

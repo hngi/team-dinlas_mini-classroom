@@ -83,7 +83,7 @@
 	//check if user is a teacher
 		function isTeacher()
 		{
-			if ($_SESSION['id'] !== 'teacher') {
+			if ($_SESSION['type'] !== 'teacher') {
 				header('Location: index.php');
 			}
 		}
@@ -91,7 +91,7 @@
 	//check if user is a student
 	function isStudent()
 	{
-		if ($_SESSION['id'] !== 'student') {
+		if ($_SESSION['type'] !== 'student') {
 			header('Location: index.php');
 		}
 	}

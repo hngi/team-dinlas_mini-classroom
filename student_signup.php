@@ -41,7 +41,7 @@ if (isset($_POST['signup'])) {
         $res = mysqli_query($con, "INSERT INTO students SET fullname = '$fullname', password = '$password', email = '$email', phone = '$phone' ") or die(mysqli_error($con));
         if ($res) {
             addAlert('success', 'Registration Successful! Please Login');
-            echo "<script type='text/javascript'>document.location='student_signup.php'</script>";
+            echo "<script type='text/javascript'>document.location='student_login.php'</script>";
         } else {
             addAlert('error', 'Something went wrong!');
             echo "<script type='text/javascript'>document.location='student_signup.php'</script>";
