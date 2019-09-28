@@ -37,13 +37,10 @@
 					<a class="nav-link" href="faq.html">FAQ</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link text-bolded" href="teacher_signup.php">Become a tutor</a>
+					<a class="nav-link" href="login_page.php">Login</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="student_login.php">Student</a>
-			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="teacher_login.php">Teacher</a>
+					<a class="nav-link" href="signup_page.php">Sign Up</a>
 			</li>
 		</ul>
 	</div>
@@ -62,8 +59,7 @@
   <h5>Engage on one-on-one with a tutor and get hands on training</h5>
   <br>
   
-<a href="teacher_signup.php" class="btn btn-info btn-lg"> <i class="icon-user"></i> Start Teaching</a>  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-<a href="student_signup.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Start Learning</a> 
+<a href="student_signup.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Take your first Step</a> 
 </div>
 
 <!-- Icons Grid -->
