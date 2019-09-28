@@ -4,8 +4,8 @@
 
 ### To view the final Build 
 
-⋅⋅* Visit [Diclass](https://di-class.herokuapp.com/ "DiClass")
-⋅⋅* Enjoy
+* Visit [Diclass](https://di-class.herokuapp.com/ "DiClass")
+* Enjoy
 
 ## Contributing
 
