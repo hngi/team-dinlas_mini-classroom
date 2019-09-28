@@ -1,3 +1,4 @@
+
 <?php
 
 require_once('config.php');
@@ -7,6 +8,8 @@ $con = mysqli_connect($databaseHost, $databaseUser, $databasePassword, $database
 
 // Check connection
 if (mysqli_connect_errno()) {
-    echo "Failed to connectto MySQL: " . mysqli_connect_error();
-
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
+
+?>
+
