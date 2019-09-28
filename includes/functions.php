@@ -72,4 +72,40 @@
 			unset($_SESSION['alert_message']);
 		}
 	}
+
+	//check if logged in
+	function isLoggedIn(){
+		if(!isset($_SESSION['id'])){
+			header('Location: index.php');
+		}
+	}
+
+	//check if user is a teacher
+		function isTeacher()
+		{
+			if ($_SESSION['id'] !== 'teacher') {
+				header('Location: index.php');
+			}
+		}
+
+	//check if user is a student
+	function isStudent()
+	{
+		if ($_SESSION['id'] !== 'student') {
+			header('Location: index.php');
+		}
+	}
+
+
+
+	//Get Youtube ID
+	function getYoutubeID($url){
+		preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+		return $matches['1'];
+	}
+
+	//display rating
+	function getClassRating($con, $class_id){
+		$q = 'select count(rating_id) as no, FORMAT(avg(rating),1) as avg1, class_id from class_rating group by class_id';
+	}
 ?>
