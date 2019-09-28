@@ -28,8 +28,6 @@
         <form action="signup.php" method="POST" class="signup-form">  
             <!-- <button id="SignUpWithGoogleEmail"> <img src="assets/google-logo.png" alt=""> Continue with Google</button> -->
             
-            <hr>
-
             <label for="fullname">
                 <input type="text" name="fullname" id="fullname" placeholder="Full Name">
             </label>
