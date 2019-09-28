@@ -59,7 +59,7 @@
   <h5>Engage on one-on-one with a tutor and get hands on training</h5>
   <br>
   
-<a href="student_signup.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Take your first Step</a> 
+<a href="signup_page.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Take your first Step</a> 
 </div>
 
 <!-- Icons Grid -->
