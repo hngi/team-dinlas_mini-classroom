@@ -1,11 +1,11 @@
 # Team Dinlas Mini Classroom Web App
 
-### HNG Stage 3 Task fro Team Dinlas
-
-### To view the final Build 
+# To view the final Build 
 
 * Visit [Diclass](https://di-class.herokuapp.com/ "DiClass")
 * Enjoy
+
+### HNG Stage 3 Task fro Team Dinlas
 
 ## Contributing
 
