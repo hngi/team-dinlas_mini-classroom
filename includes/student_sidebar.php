@@ -9,7 +9,7 @@ $tid = $_SESSION['id'];
         <?php 
 
         if($tqr['student_photo'] == ''){ ?>
-            <img src="assets/avatar.png" alt="<?php echo $tqr['fullname'] ?>">
+            <img src="avatar.png" alt="<?php echo $tqr['fullname'] ?>">
        <?php }else{ ?>
             <img src="<?php echo $tqr['student_photo'] ?>" alt="<?php echo $tqr['fullname'] ?>">
        <?php }

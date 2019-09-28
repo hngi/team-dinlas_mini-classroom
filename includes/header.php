@@ -20,7 +20,7 @@ $tqr = mysqli_fetch_array($tq);
         <?php
 
 if ($tqr['teacher_photo'] == '') {?>
-            <a href=""><img src="assets/avatar.png" alt="<?php echo $tqr['fullname'] ?>" width="50" height="50" class="avatar"></a>
+            <a href=""><img src="avatar.png" alt="<?php echo $tqr['fullname'] ?>" width="50" height="50" class="avatar"></a>
        <?php } else {?>
             <a href=""><img src="<?php echo $tqr['teacher_photo'] ?>" alt="<?php echo $tqr['fullname'] ?>" width="50" height="50" class="avatar"></a>
        <?php }
@@ -34,7 +34,7 @@ $tqr = mysqli_fetch_array($tq);
         <?php
 
 if ($tqr['student_photo'] == '') {?>
-            <a href=""><img src="assets/avatar.png" alt="<?php echo $tqr['fullname'] ?>" width="50" height="50" class="avatar"></a>
+            <a href=""><img src="avatar.png" alt="<?php echo $tqr['fullname'] ?>" width="50" height="50" class="avatar"></a>
        <?php } else {?>
             <a href=""><img src="<?php echo $tqr['student_photo'] ?>" alt="<?php echo $tqr['fullname'] ?>" width="50" height="50" class="avatar"></a>
        <?php }
