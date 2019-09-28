@@ -17,8 +17,10 @@
             <h1>Reach out & Teach thousands of Students</h1>
             <p>Already signed up? <a href="teacher_login.php">Log In</a></p>
             <br>
-            <!-- we display proper error or success messages -->
-            <?php echo showAlert(); ?>
+            <?php 
+            include 'includes/functions';
+            
+            echo showAlert(); ?>
             
         </header>
         <form action="teacher_signup_post.php" method="POST" class="signup-form">  

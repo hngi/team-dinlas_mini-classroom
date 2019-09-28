@@ -16,8 +16,10 @@
             <h1>A Better Way to Learn from an expert</h1>
             <p>Already signed up? <a href="student_login.php">Log In</a></p>
             <br>
-            <!-- we display proper error or success messages -->
-			<?php echo showAlert(); ?>
+            <?php 
+            include 'includes/functions';
+            
+            echo showAlert(); ?>
         </header>
         <form action="student_signup_post.php" method="POST" class="signup-form">  
             <button id="SignUpWithGoogleEmail"> <img src="assets/google-logo.png" alt=""> Continue with Google</button>

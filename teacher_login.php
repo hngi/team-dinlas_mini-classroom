@@ -19,8 +19,10 @@
             <h1>Welcome back!</h1>
             <p>New to DiClass? <a href="teacher_signup.php">Sign Up</a></p>
             <br>
-            <!-- we display proper error or success messages -->
-			<?php echo showAlert(); ?>
+            <?php 
+            include 'includes/functions';
+            
+            echo showAlert(); ?>
         </header>
         <form action="teacher_login_post.php" method="POST" class="login-form">
            
