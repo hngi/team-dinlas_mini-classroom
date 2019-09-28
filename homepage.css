@@ -59,6 +59,22 @@ body{
   position: absolute;
   top: 50%;
 }
+.form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  /* display: block; */
+  width: 2.375rem;
+  height: 2.375rem;
+  margin-top: -15px;
+  margin-left: 150px;
+  line-height: 2.375rem;
+  text-align: center;
+  cursor: pointer;
+  color: #00AEFF;
+}
+.main{
+	margin-right:50%;
+}
 .btn-md{
   border-width: medium;
   border-radius: 0;

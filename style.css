@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 button {
@@ -34,6 +35,7 @@ li {
 body {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
 }
 
 ::-webkit-input-placeholder {
@@ -64,18 +66,27 @@ hr {
 }
 
 hr:before {
-    content: "or";
+    /* content: "or"; */
     font-size: 18px;
     padding: 0.5rem;
     line-height: 20px;
     background: white;
-
     position: absolute;
     top: -20px;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 20px;
+}
+
+.add-course h3{
+    color: #00AEFF;
+    text-align: center;
+}
+
+.add-course hr{
+    top: -10px;
+    border: 1px solid grey;
 }
 
 .signup_login {
@@ -102,8 +113,7 @@ hr:before {
 .signup_login input, .signup_login button {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
-    padding: 0.8em 1em 0.5em;
-    
+    padding: 0.8em 1em 0.5em;   
     width: 100%;
 }
 
@@ -146,15 +156,23 @@ hr:before {
 
 #header span, .faq-searchform span {
     position: absolute;
-    right: 1rem;
+    left: 10rem;
     font-size: 2rem;
-    color: #777;
+    cursor: pointer;
+    color: #00AEFF;
 }
 
 #header input, #footer input, #footer .submit, .faq-searchform input {
-    /* width: 100%; */
     padding: 1rem 1.4rem;
-    border: none;
+    border: 1px solid #00AEFF;
+}
+.submit-class{
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    background-color: #00AEFF;
+    color: white;
+    padding: 0.8em 1em 0.5em;
 }
 
 .avatar {
@@ -204,6 +222,22 @@ hr:before {
     font-size: 2.5rem;
     vertical-align: sub;
     display: none;
+}
+
+.reaction1 span{
+    position: absolute;
+    margin-top: -4.5px;
+    margin-left: 2px;
+}
+.reaction2 span{
+    position: absolute;
+    margin-top: -4.5px;
+    margin-left: 2px;
+}
+.reaction2{
+    position: relative;
+    padding-left: 120px;
+    bottom: 40px;
 }
 
 .courses h2:hover {
@@ -285,10 +319,10 @@ hr:before {
 
 .profile a:hover {
     color: black;
-    text-decoration: underline;
+    transition: all 0.3s ease;
 }
 
-.add-course {
+.add-course, .community {
     padding: 3rem 1.5rem;
 }
 .add-course label {
@@ -305,7 +339,31 @@ hr:before {
     color: red;
 }
 
+.community aside {
+    margin-bottom: 2rem;
+}
 
+.community aside a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.community aside ul {
+    border: 1px solid #00AEFF;
+    margin-top: 1rem;
+}
+
+.community aside li {
+    border-bottom: 1px solid #00AEFF;
+    padding: 0.5rem 1.5rem;
+}
+
+.community .topic {
+    color: white;
+    background: #00AEFF;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
 @media screen and (min-width: 1000px) {
 
     #footer {
@@ -317,7 +375,6 @@ hr:before {
     #footer div {
         margin-bottom: 0;
     }
-
         
     .course-page aside {
         max-height: 380px;
@@ -360,4 +417,19 @@ hr:before {
         width: 70%;
         vertical-align: top;
     }
+
+    .community aside {
+        width: 24%;
+        vertical-align: top;
+    }
+
+    .community main {
+        width: 40%;
+        margin: 0 5%;
+    }
+
+    .community aside, .community main {
+        display: inline-block;
+    }
+
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community - Team Dinlas Mini Classroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <img src="assets/logo.png" alt="Team Dinlas" height="60">
+        <form action="">
+            <label for="search">
+                <input type="search" name="search" id="search" placeholder="Find your classes">
+                <span>&telrec;</span>
+            </label>
+        </form>
+        <a href=""><img src="assets/avatar.png" alt="Img" width="50" height="50" class="avatar"></a>
+    </header>
+    <div class="back-nav ">
+        <h1 class="text-center">Community</h1>
+    </div>
+
+    <div class="community">
+        <aside>
+            <details>
+                <summary class="main-color">CATEGORIES</summary>
+                <ul>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                    <li><a href="#">Category Name</a></li>
+                </ul>
+            </details>
+        </aside>
+    
+        <main>
+            <div class="text-center topic"><h2>POSTS</h2></div>
+            <article>
+                <div class="main-color">26th of Sep. 2019</div>
+                <h2>The Flash - A guide to SWIFT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem blanditiis magnam voluptatem dicta earum placeat, assumenda voluptatum, iste architecto non cum velit officiis, sit praesentium facilis fuga accusantium? Illo!</p>
+                <p><span class="main-color">25</span> Comments <span class="main-color">15</span> Likes</p>
+            </article>
+            <article>
+                <div class="main-color">26th of Sep. 2019</div>
+                <h2>The Flash - A guide to SWIFT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem blanditiis magnam voluptatem dicta earum placeat, assumenda voluptatum, iste architecto non cum velit officiis, sit praesentium facilis fuga accusantium? Illo!</p>
+                <p><span class="main-color">25</span> Comments <span class="main-color">15</span> Likes</p>
+            </article>
+            <article>
+                <div class="main-color">26th of Sep. 2019</div>
+                <h2>The Flash - A guide to SWIFT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem blanditiis magnam voluptatem dicta earum placeat, assumenda voluptatum, iste architecto non cum velit officiis, sit praesentium facilis fuga accusantium? Illo!</p>
+                <p><span class="main-color">25</span> Comments <span class="main-color">15</span> Likes</p>
+            </article>
+            <article>
+                <div class="main-color">26th of Sep. 2019</div>
+                <h2>The Flash - A guide to SWIFT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem blanditiis magnam voluptatem dicta earum placeat, assumenda voluptatum, iste architecto non cum velit officiis, sit praesentium facilis fuga accusantium? Illo!</p>
+                <p><span class="main-color">25</span> Comments <span class="main-color">15</span> Likes</p>
+            </article>
+            <article>
+                <div class="main-color">26th of Sep. 2019</div>
+                <h2>The Flash - A guide to SWIFT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem blanditiis magnam voluptatem dicta earum placeat, assumenda voluptatum, iste architecto non cum velit officiis, sit praesentium facilis fuga accusantium? Illo!</p>
+                <p><span class="main-color">25</span> Comments <span class="main-color">15</span> Likes</p>
+            </article>
+        </main>
+    
+        <aside>
+            <details>
+                <summary class="main-color">TOPIC</summary>
+                <ul>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                    <li><a href="#">Post Title</a></li>
+                </ul>
+            </details>
+        </aside>
+    </div>
+
+    <footer id="footer">
+        <div>
+            <h2>Connect with us</h2>
+            <ul>
+                <li><a href="#"><img src="assets/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="assets/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="assets/youtube.png" alt="Youtube"></a></li>
+                <li><a href="#"><img src="assets/googleplus.png" alt="Google+"></a></li>
+            </ul>
+        </div>
+        <div><p>&copy; 2019 | Dinlas</p></div>
+        <div>
+            <h2>Sign up for our newsletter</h2>
+            <form action="">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="example@dinlas.team">
+                </label>
+                <button type="submit" class="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        var details = document.getElementsByTagName("details");
+        var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if (screenWidth > 1000) {
+            
+            for (var i=0; i < details.length; i++) {
+                details[i].open = true;
+            }
+        }
+    </script>
+</body>
+</html>
