@@ -56,7 +56,7 @@
 </div>
 <div class="caption text-center">
 	<h1>Learn from Expert Tutors without paying a dime!</h1>
-  <h5>Engage on one-on-one with a tutor and get hands on training</h5>
+  <h5>Engage one-on-one with a tutor and get hands on training</h5>
   <br>
   
 <a href="signup_page.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Take your first Step</a> 

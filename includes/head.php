@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Di-Class connects students with expert teachers & provides unlimited resources fro learning for free!">
+    <meta name="keywords" content="teach, student, learn, free course, tutors, education" />
+    <meta property="og:title" content="Di-Class" />
+    <meta property="og:image"
+        content="assets/logo.png" />
+    <meta property="og:description"
+        content="Di-Class connects students with expert teachers & provides unlimited resources fro learning for free!" />
     <title> <?php  echo $pageTitle ?> - Di Class</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
