@@ -23,7 +23,7 @@ if (isset($_POST['login'])) {
 
         if ($counter == 0) {
             addAlert('error', 'Invalid Email or Password! Try again');
-            echo "<script>document.location='student_login.php'</script>";
+            echo "<script>document.location='login_page.php'</script>";
         } else {
 
             $row = mysqli_fetch_array($query);
@@ -47,7 +47,7 @@ $counter = mysqli_num_rows($query);
 if ($counter == 0) {
 
     addAlert('error', 'Invalid Email or Password! Try again');
-    echo "<script>document.location='teacher_login.php'</script>";
+    echo "<script>document.location='login_page.php'</script>";
 } else {
 
     //Get user details from db

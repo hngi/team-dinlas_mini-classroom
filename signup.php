@@ -27,16 +27,16 @@ if (isset($_POST['signup'])) {
 
         if (!validateEmail($email)) {
             addAlert('error', 'Invalid Email address');
-            echo "<script>document.location='student_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else if (strlen($password) < 6) {
             addAlert('error', 'Password must be atleast Six (6) characters');
-            echo "<script>document.location='student_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else if ($password != $confirm_password) {
             addAlert('error', 'Passwords dont Match');
-            echo "<script>document.location='student_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else if ($email_count > 0) {
             addAlert('error', 'Email address already exists!');
-            echo "<script>document.location='student_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else {
 
             $res = mysqli_query($con, "INSERT INTO students SET fullname = '$fullname', password = '$password', email = '$email', phone = '$phone' ") or die(mysqli_error($con));
@@ -45,7 +45,7 @@ if (isset($_POST['signup'])) {
                 echo "<script type='text/javascript'>document.location='student_login.php'</script>";
             } else {
                 addAlert('error', 'Something went wrong!');
-                echo "<script type='text/javascript'>document.location='student_signup.php'</script>";
+                echo "<script type='text/javascript'>document.location='signup_page.php'</script>";
             }
         }
 
@@ -58,25 +58,25 @@ if (isset($_POST['signup'])) {
 
         if (!validateEmail($email)) {
             addAlert('error', 'Invalid Email address');
-            echo "<script>document.location='teacher_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else if (strlen($password) < 6) {
             addAlert('error', 'Password must be atleast Six (6) characters');
-            echo "<script>document.location='teacher_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else if ($password != $confirm_password) {
             addAlert('error', 'Passwords dont Match');
-            echo "<script>document.location='teacher_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else if ($email_count > 0) {
             addAlert('error', 'Email address already exists!');
-            echo "<script>document.location='teacher_signup.php'</script>";
+            echo "<script>document.location='signup_page.php'</script>";
         } else {
 
             $res = mysqli_query($con, "INSERT INTO teachers SET fullname = '$fullname', password = '$password', email = '$email', phone = '$phone' ") or die(mysqli_error($con));
             if ($res) {
                 addAlert('success', 'Registration Successful! Please Login');
-                echo "<script type='text/javascript'>document.location='teacher_signup.php'</script>";
+                echo "<script type='text/javascript'>document.location='signup_page.php'</script>";
             } else {
                 addAlert('error', 'Something went wrong!');
-                echo "<script type='text/javascript'>document.location='teacher_signup.php'</script>";
+                echo "<script type='text/javascript'>document.location='signup_page.php'</script>";
             }
         }
 
@@ -84,5 +84,5 @@ if (isset($_POST['signup'])) {
 
     
 } else {
-    header('Location student_signup.php');
+    header('Location signup_page.php');
 }

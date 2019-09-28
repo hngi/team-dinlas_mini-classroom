@@ -55,8 +55,6 @@
             </select>
             </label>
 
-            <p>By clicking "Continue with Google/Email" above, you acknowledge that you have read and understood, and agree to Lucid's <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
-
             <button id="SignUpWithEmail" name="signup" type="submit">Continue with Email</button>
             
             
