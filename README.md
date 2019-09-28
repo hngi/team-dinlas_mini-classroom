@@ -2,9 +2,10 @@
 
 ### HNG Stage 3 Task fro Team Dinlas
 
-###To view the final Build
+### To view the final Build 
 
-[Visit](https://di-class.herokuapp.com/ "DiClass")
+Visit [Diclass](https://di-class.herokuapp.com/ "DiClass")
+Enjoy
 
 ## Contributing
 
