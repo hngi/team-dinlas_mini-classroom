@@ -13,6 +13,7 @@ button {
 .container {
     position: relative;
 }
+
 .container:after {
     content: " ";
     display: table;
@@ -48,7 +49,10 @@ body {
     color: #00AEFF
 }
 
-p, h1, img, button {
+p,
+h1,
+img,
+button {
     margin-bottom: 24px;
 }
 
@@ -99,15 +103,18 @@ hr:before {
     margin-bottom: 1em;
 }
 
-.signup_login input, .signup_login button {
+.signup_login input,
+.signup_login button {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
     padding: 0.8em 1em 0.5em;
-    
+
     width: 100%;
 }
 
-#SignUpWithEmail, #login, .submit {
+#SignUpWithEmail,
+#login,
+.submit {
     background-color: #00AEFF;
     color: white;
     padding: 0.8em 1em 0.5em;
@@ -138,21 +145,26 @@ hr:before {
     width: auto;
 }
 
-#header form, .faq-searchform {
+#header form,
+.faq-searchform {
     width: 50%;
     position: relative;
 }
 
 
-#header span, .faq-searchform span {
+#header span,
+.faq-searchform span {
     position: absolute;
     right: 1rem;
     font-size: 2rem;
     color: #777;
 }
 
-#header input, #footer input, #footer .submit, .faq-searchform input {
-    /* width: 100%; */
+#header input,
+#footer input,
+#footer .submit,
+.faq-searchform input {
+    width: 100%;
     padding: 1rem 1.4rem;
     border: none;
 }
@@ -161,7 +173,8 @@ hr:before {
     border-radius: 50%;
 }
 
-#header input::placeholder, #footer input::placeholder {
+#header input::placeholder,
+#footer input::placeholder {
     color: #777;
     display: none;
     width: 30px;
@@ -174,13 +187,15 @@ hr:before {
 }
 
 
-.course-page, .faq-page {
+.course-page,
+.faq-page {
     width: 80%;
     margin: 4rem auto;
     max-width: 910px;
 }
 
-.course-page main, .course-page aside {
+.course-page main,
+.course-page aside {
     display: inline-block;
     width: 100%;
     max-width: 450px;
@@ -227,8 +242,9 @@ hr:before {
     width: 100%;
     max-width: 380px;
     margin-bottom: 3rem;
-    
+
 }
+
 #footer li {
     display: inline-block;
 }
@@ -291,12 +307,15 @@ hr:before {
 .add-course {
     padding: 3rem 1.5rem;
 }
+
 .add-course label {
     display: block;
     padding-bottom: 0.5rem;
 }
 
-.add-course input, .add-course select, .add-course textarea {
+.add-course input,
+.add-course select,
+.add-course textarea {
     padding: 1rem;
     width: 100%;
 }
@@ -318,7 +337,7 @@ hr:before {
         margin-bottom: 0;
     }
 
-        
+
     .course-page aside {
         max-height: 380px;
         overflow-y: scroll;
@@ -341,6 +360,7 @@ hr:before {
         position: relative;
         left: 30%;
     }
+
     .profile li {
         display: block;
         margin-bottom: 1rem;
@@ -356,7 +376,9 @@ hr:before {
         width: 25%;
     }
 
-    .add-course input, .add-course select, .add-course textarea {
+    .add-course input,
+    .add-course select,
+    .add-course textarea {
         width: 70%;
         vertical-align: top;
     }
