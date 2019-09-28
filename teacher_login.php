@@ -20,7 +20,7 @@
             <p>New to DiClass? <a href="teacher_signup.php">Sign Up</a></p>
             <br>
             <?php 
-            include 'includes/functions';
+            include 'includes/functions.php';
             
             echo showAlert(); ?>
         </header>

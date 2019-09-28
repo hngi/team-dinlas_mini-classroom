@@ -18,7 +18,7 @@
             <br>
             <!-- we display proper error or success messages -->
             <?php 
-            include 'includes/functions';
+            include 'includes/functions.php';
             
             echo showAlert(); ?>
         </header>

@@ -17,7 +17,7 @@
             <p>Already signed up? <a href="student_login.php">Log In</a></p>
             <br>
             <?php 
-            include 'includes/functions';
+            include 'includes/functions.php';
             
             echo showAlert(); ?>
         </header>
