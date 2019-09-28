@@ -1,5 +1,7 @@
 # Team Dinlas Mini Classroom Web App
 
+![picture alt](https://res.cloudinary.com/iyke4life/image/upload/v1569684067/Header_github_n3zxnc.png "Title is optional")
+
 # To view the final Build 
 
 * Visit [Diclass](https://di-class.herokuapp.com/ "DiClass")
