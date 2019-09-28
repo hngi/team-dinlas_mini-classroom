@@ -24,7 +24,6 @@ if (isset($_POST['login'])) {
         echo "<script>document.location='index.php'</script>";
     } else {
 
-        //Get user details from db
         $row = mysqli_fetch_array($query);
         $name = $row['fullname'];
         $id = $row['student_id'];
