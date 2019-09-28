@@ -2,7 +2,7 @@
 
 //Database Options
 $databaseHost = 'localhost';
-$databaseName = 'mini_class';
+$databaseName = 'min';//renamed from mini_class to miniclass
 $databaseUser = 'root';
 $databasePassword = '';
 
