@@ -106,6 +106,25 @@
 
 	//display rating
 	function getClassRating($con, $class_id){
-		$q = 'select count(rating_id) as no, FORMAT(avg(rating),1) as avg1, class_id from class_rating group by class_id';
+		$q = mysqli_query($con, "SELECT SUM(rating) as ratings, COUNT(student_id) as total FROM class_rating WHERE class_id = '$class_id'") or die(mysqli_error($con));
+		$r = mysqli_fetch_array($q);
+
+		$ratings = $r['ratings'];
+		$total = $r['total'];
+		$avg = $total == 0 ? 0 : ceil($ratings / $total);
+
+		$rem = 5 - $avg;
+
+		for($i = 1; $i <= $avg; $i++){
+			echo '<i class="fa fa-star text-info"></i>';
+		}
+
+		for ($j = 1; $j <= $rem; $j++) {
+    		echo '<i class="fa fa-star-o text-info"></i>';
+		}
+
+        echo "&nbsp; &nbsp; <b>".$avg." / 5</b> (".$total.")";
+
+
 	}
 ?>

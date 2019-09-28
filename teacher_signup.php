@@ -1,59 +1,4 @@
-<?php session_start();
-
-//Proper Database configuration here
-include 'includes/db_connection.php';
-include 'includes/functions.php';
-
-if (isset($_POST['signup'])) {
-
-    $fullname_unsafe = $_POST['fullname'];
-    $email_unsafe = $_POST['email'];
-    $phone_unsafe = $_POST['phone'];
-    $pass_unsafe = $_POST['password'];
-    $conf_pass_unsafe = $_POST['confirm_password'];
-
-    $fullname = mysqli_real_escape_string($con, $fullname_unsafe);
-    $email = mysqli_real_escape_string($con, $email_unsafe);
-    $phone = mysqli_real_escape_string($con, $phone_unsafe);
-    $password = mysqli_real_escape_string($con, $pass_unsafe);
-    $confirm_password = mysqli_real_escape_string($con, $conf_pass_unsafe);
-
-    //Validation
-
-    //check if email exists
-    $email_query = mysqli_query($con, "SELECT * FROM teachers WHERE email = '$email'") or die(mysqli_error($con));
-    $email_count = mysqli_num_rows($email_query);
-
-    if (!validateEmail($email)) {
-        addAlert('error', 'Invalid Email address');
-        echo "<script>document.location='teacher_signup.php'</script>";
-    } else if (strlen($password) < 6) {
-        addAlert('error', 'Password must be atleast Six (6) characters');
-        echo "<script>document.location='teacher_signup.php'</script>";
-    } else if ($password != $confirm_password) {
-        addAlert('error', 'Passwords dont Match');
-        echo "<script>document.location='teacher_signup.php'</script>";
-    } else if ($email_count > 0) {
-        addAlert('error', 'Email address already exists!');
-        echo "<script>document.location='teacher_signup.php'</script>";
-    } else {
-
-        $res = mysqli_query($con, "INSERT INTO teachers SET fullname = '$fullname', password = '$password', email = '$email', phone = '$phone' ") or die(mysqli_error($con));
-        if ($res) {
-            addAlert('success', 'Registration Successful! Please Login');
-            echo "<script type='text/javascript'>document.location='teacher_signup.php'</script>";
-        } else {
-            addAlert('error', 'Something went wrong!');
-            echo "<script type='text/javascript'>document.location='teacher_signup.php'</script>";
-        }
-    }
-} else {
-    header('Location index.php');
-}
-
-?>
-
-
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,11 +19,13 @@ if (isset($_POST['signup'])) {
             <h1>Reach out & Teach thousands of Students</h1>
             <p>Already signed up? <a href="teacher_login.php">Log In</a></p>
             <br>
-            <!-- we display proper error or success messages -->
-            <?php echo showAlert(); ?>
+            <?php 
+            include 'includes/functions.php';
+            
+            echo showAlert(); ?>
             
         </header>
-        <form action="" method="POST" class="signup-form">  
+        <form action="teacher_signup_post.php" method="POST" class="signup-form">  
             <button id="SignUpWithGoogleEmail"> <img src="assets/google-logo.png" alt=""> Continue with Google</button>
             
             <hr>
@@ -109,6 +56,7 @@ if (isset($_POST['signup'])) {
             
             
         </form>
+        <p><a href="index.php" class="text-center"> << Go Back Home</a></p>
 
     </div>
 </body>

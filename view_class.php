@@ -52,11 +52,7 @@ include 'includes/student_sidebar.php';
                     <b class="main-color">Teacher:  <?php echo $class_row['fullname'] ?></b>
                 </div>
                 <div style="float: right">
-                    <i class="fa fa-star text-info"></i>
-                    <i class="fa fa-star text-info"></i>
-                    <i class="fa fa-star text-info"></i>
-                    <i class="fa fa-star text-info"></i>
-                    <b>4 / 5</b> (734) - 76 Students
+                    <?php echo getClassRating($con, $class_row['class_id']); ?> Students
                 </div>
             </div>
                 <br><br>
@@ -159,7 +155,7 @@ include 'includes/student_sidebar.php';
 
                         <?php } ?>
 
-                        <?php if($class_row['teacher_id'] == $_SESSION['id'] ){ ?>
+                        <?php if($class_row['teacher_id'] == $_SESSION['id'] && $_SESSION['type'] != 'student'){ ?>
 
                         <a href="edit_lecture.php?id=<?php echo $row['item_id'] ?>" class="btn btn-success btn-sm" style="float: left"> <i class="fa fa-edit text-light"></i> Edit </a> 
                         <a id="<?php echo $row['item_id'] ?>" href="#" title="Delete" class="btn btn-danger btn-sm delete" style="float: right"> <i class="fa fa-trash text-light"></i> Delete </a> 

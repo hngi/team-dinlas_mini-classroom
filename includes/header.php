@@ -3,7 +3,7 @@
         <form action="search.php">
             <label for="search">
                 <input type="search" name="q" id="search" placeholder="Find your classes">
-                <span>&telrec;</span>
+                <!-- <span>&telrec;</span> -->
             </label>
         </form>
         <?php

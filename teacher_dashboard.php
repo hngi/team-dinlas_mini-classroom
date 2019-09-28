@@ -17,12 +17,12 @@ include 'includes/head.php';
 <body>
 
 <?php
- include 'includes/header.php';
- ?>
+include 'includes/header.php';
+?>
     <div class="container-fluid">
         <?php
-        include 'includes/teacher_sidebar.php';
-        ?>
+include 'includes/teacher_sidebar.php';
+?>
         <main class="add-course">
             <h1 class="text-center main-color">Dashboard</h1>
 
@@ -33,23 +33,23 @@ include 'includes/head.php';
 
                 <!-- list of lectures -->
             <?php
-            $query = mysqli_query($con, "SELECT * FROM class WHERE teacher_id = '$teacher_id' ORDER BY class_id DESC ")or die(mysqli_error($con));
-            $lectures = mysqli_num_rows($query);
+$query = mysqli_query($con, "SELECT * FROM class WHERE teacher_id = '$teacher_id' ORDER BY class_id DESC ") or die(mysqli_error($con));
+$lectures = mysqli_num_rows($query);
 
-            if($lectures == 0){
-                echo "<h1 class='text-center mt-5'>You have no Class! Create one <a href='create_class.php'>Here</a></h1>";
-            }else{
-                while($row = mysqli_fetch_array($query)){
+if ($lectures == 0) {
+    echo "<h1 class='text-center mt-5'>You have no Class! Create one <a href='create_class.php'>Here</a></h1>";
+} else {
+    while ($row = mysqli_fetch_array($query)) {
 
-                    $cid = $row['class_id'];
+        $cid = $row['class_id'];
 
-                    $std_query = mysqli_query($con, "SELECT * FROM student_class WHERE class_id = '$cid'")or die(mysqli_error($con));
-                    $students = mysqli_num_rows($std_query);
+        $std_query = mysqli_query($con, "SELECT * FROM student_class WHERE class_id = '$cid'") or die(mysqli_error($con));
+        $students = mysqli_num_rows($std_query);
 
-                    $l_query = mysqli_query($con, "SELECT * FROM class_items WHERE class_id = '$cid'")or die(mysqli_error($con));
-                    $lectures_count = mysqli_num_rows($l_query);
-                    
-                     ?>
+        $l_query = mysqli_query($con, "SELECT * FROM class_items WHERE class_id = '$cid'") or die(mysqli_error($con));
+        $lectures_count = mysqli_num_rows($l_query);
+
+        ?>
 
                 <!-- Start Class Card -->
                 <div class="card" style="margin-top: 30px;">
@@ -58,12 +58,12 @@ include 'includes/head.php';
                         <div class="row">
                             <div class="col-md-2">
                             <?php
-                                if($row['class_thumbnail'] == ''){ ?>
+                                if ($row['class_thumbnail'] == '') {?>
                                     <img src="assets/logo.png" height="100" width="90">
-                                <?php }else{ ?>
+                                <?php } else {?>
                                     <img src="<?php echo $row['class_thumbnail'] ?>" height="100" width="90">
                               <?php }
-                            ?>
+        ?>
                             </div>
                             <div class="col-md-10">
                                 <h4>
@@ -75,22 +75,18 @@ include 'includes/head.php';
                                 <span class="text-muted text-small"><b><?php echo $students ?> Students | <?php echo $lectures_count ?> Lectures</b></span>
                                 <span class="text-muted text-small" style="float: right">Created: <?php echo date("l j, M Y", strtotime($row['date_created'])); ?></span>
                                 <br>
-                                <i class="fa fa-star text-info"></i>
-                                <i class="fa fa-star text-info"></i>
-                                <i class="fa fa-star text-info"></i>
-                                <i class="fa fa-star text-info"></i>
-                                <b>4 / 5</b> (734)
+                                <?php echo getClassRating($con, $row['class_id']); ?>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
                 <!-- End Class card -->
 
-                <?php } ?>
-                <?php } ?>
+                <?php }?>
+                <?php }?>
             </div>
-            
+
         </main>
     </div>
     <!-- <footer id="footer">
@@ -116,9 +112,9 @@ include 'includes/head.php';
     </footer> -->
 
     <?php
-        // include 'includes/footer.php';
-    ?>
+// include 'includes/footer.php';
+?>
 
-    
+
 </body>
 </html>
