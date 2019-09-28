@@ -36,7 +36,7 @@
             </label>
 
             <label for="type">
-                <select name="type">
+                <select name="type" required>
                     <option value="student">Student</option>
                     <option value="teacher">Teacher</option>
                 </select>

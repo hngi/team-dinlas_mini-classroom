@@ -25,7 +25,7 @@ include 'includes/functions.php';
 echo showAlert();?>
 
         </header>
-        <form action="teacher_login_post.php" method="POST" class="login-form">
+        <form action="login.php" method="POST" class="login-form">
 
             <label for="email">
                 <input type="email" name="email" id="email" placeholder="example@gmail.com">
