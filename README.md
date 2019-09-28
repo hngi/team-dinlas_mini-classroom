@@ -2,12 +2,11 @@
 
 ![picture alt](https://res.cloudinary.com/iyke4life/image/upload/v1569684067/Header_github_n3zxnc.png "Title is optional")
 
-# To view the final Build 
+HNG Stage 3 Task from Team Dinlas To view the final Build 
 
 * Visit [Diclass](https://di-class.herokuapp.com/ "DiClass")
 * Enjoy
 
-### HNG Stage 3 Task fro Team Dinlas
 
 ## Contributing
 
