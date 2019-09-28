@@ -16,7 +16,7 @@
 <body>
     <div class="signup-container signup_login">
         <header>
-            <img src="assets/logo.png" alt="Team Dinlas">
+            <a href="index.php"><img src="assets/logo.png" alt="Team Dinlas"></a>
             <h1>A Better Way to Learn from an expert</h1>
             <p>Already signed up? <a href="student_login.php">Log In</a></p>
             <br>
