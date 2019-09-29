@@ -278,7 +278,7 @@ hr:before {
     padding: 2rem;
 }
 
-
+/*
 .fa, .fd{
 padding: 15px;
 font-size: 25px !important;
@@ -289,6 +289,8 @@ text-decoration: none;
 .fa:hover {
     color: black;
 }
+*/
+
 .faq-page summary {
     margin-bottom: 0.5rem;
 }
