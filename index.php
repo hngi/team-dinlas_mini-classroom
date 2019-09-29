@@ -105,7 +105,7 @@
         <div class="col-xl-9 mx-auto">
                 <h2>Get personalized recommendations</h2>
 			<p>Answer a few questions for your top picks and  get recommendations suited to you.</p>
-			<a class="btn btn-secondary btn-md" href="#Get-started">Get Started</a>
+			<a class="btn btn-secondary btn-md" href="signup_page.php">Get Started</a>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
     
