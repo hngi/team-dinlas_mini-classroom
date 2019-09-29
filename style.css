@@ -271,12 +271,24 @@ hr:before {
 
 .faq-page li {
     display: inline-block;
+    vertical-align: top;
     width: 100%;
     box-shadow: 0 4px 5px -2px #aaa;
     margin: 1rem 4%;
     padding: 2rem;
 }
 
+
+.fa, .fd{
+padding: 15px;
+font-size: 25px !important;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.fa:hover {
+    color: black;
+}
 .faq-page summary {
     margin-bottom: 0.5rem;
 }
