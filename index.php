@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
 	<link href="assets/landing-page.min.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
