@@ -15,7 +15,7 @@
 <body>
     <div class="signup-container signup_login">
         <header>
-            <img src="assets/logo.png" alt="Team Dinlas">
+            <a href="index.php"><img src="assets/logo.png" alt="Team Dinlas"></a>
             <h1>Welcome back!</h1>
             <p>New to DiClass? <a href="signup_page.php">Sign Up</a></p>
             <br>
