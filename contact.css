@@ -1,0 +1,48 @@
+select[id="labelTitle"]{
+	width:100%;
+	max-width: 400px;
+	height:40px;	
+	color:#00aeff;
+	border: 1px solid #00AEFF;
+	display: block;
+	margin-bottom: 1em;
+	padding: 0.5em 0.5em 0.2em;
+}
+
+input[type="text"], input[type="email"]{
+	width:100%;
+	max-width: 400px;
+	height:40px;	
+	border: 1px solid #00AEFF;
+	display: block;
+	margin-bottom: 1em;
+	padding: 1em 0.5em 1em;
+}
+input[type="submit"]{
+	width:100%;
+	max-width: 400px;
+	height:40px;
+	background-color: #00AEFF;
+	border: 1px solid #00AEFF;
+	color:white;
+	display: block;
+	margin-bottom: 1em; 
+}
+textarea[id="labelMessage"]{
+	width: 100%;
+	max-width: 400px;
+	height: 200px;
+	border: 1px solid #00AEFF;
+	display: block;
+	margin-bottom: 1em;
+	padding: 1em 0.5em 1em;
+}
+
+.subtext{
+	color: #00AEFF;
+}
+
+a{
+	text-align: center;
+	color: #00AEFF;
+}
