@@ -476,4 +476,8 @@ progress[value]::-webkit-progress-bar {
         display: inline-block;
     }
 
+    .course-category ul {
+        text-align: left;
+    }
+
 }
