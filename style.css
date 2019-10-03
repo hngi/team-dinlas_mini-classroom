@@ -332,6 +332,81 @@ hr:before {
     margin-bottom: 2rem;
     padding: 1rem;
 }
+
+.course-category h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.course-category ul {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.course-category li {
+    text-align: left;
+    width: 300px;
+    display: inline-block;
+    box-shadow: 0 4px 5px -2px #aaa;
+    padding: 0.3rem 0.6rem 1rem;
+    margin: 0 0.5rem 2rem;
+}
+
+.course-category img {
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.course-category .author {
+    margin-bottom: 0.5rem;
+    color: #777;
+}
+
+.course-category .oneline p {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    margin: 0;
+}
+
+.course-category .oneline p:nth-child(2) {
+    text-align: right;
+}
+
+.course-category .oneline p:nth-child(2) span {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.course-category .checked {
+    color: orange;
+}
+
+.course-category progress {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+}
+
+.course-category progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.course-category progress[value]::-webkit-progress-value {
+    background-image: linear-gradient(45deg, #00AEFF, #00aeff);
+    border-radius: 4px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
 @media screen and (min-width: 1000px) {
 
     #footer {
@@ -355,7 +430,7 @@ hr:before {
     }
 
     .profile {
-        width: 30%;
+        width: 25%;
         float: left;
         /* min-height: 100%; */
         position: absolute;
@@ -363,9 +438,9 @@ hr:before {
     }
 
     .add-course {
-        width: 70%;
+        width: 75%;
         position: relative;
-        left: 30%;
+        left: 25%;
     }
     .profile li {
         display: block;
