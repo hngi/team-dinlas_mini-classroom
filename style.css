@@ -480,4 +480,8 @@ progress[value]::-webkit-progress-bar {
         text-align: left;
     }
 
+    .course-category li {
+        width: 280px;
+    }
+
 }
