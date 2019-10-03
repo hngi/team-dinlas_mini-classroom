@@ -2,16 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 button {
     background: none;
     color: #00AEFF;
+    border: 0 none;
+}
+
+.container {
+    position: relative;
+}
+.container:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-color {
+    color: #00AEFF;
+}
+
+li {
+    list-style-type: none;
 }
 
 body {
     font-size: 100%;
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
 }
 
 ::-webkit-input-placeholder {
@@ -42,18 +66,27 @@ hr {
 }
 
 hr:before {
-    content: "or";
+    /* content: "or"; */
     font-size: 18px;
     padding: 0.5rem;
     line-height: 20px;
     background: white;
-
     position: absolute;
     top: -20px;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 20px;
+}
+
+.add-course h3{
+    color: #00AEFF;
+    text-align: center;
+}
+
+.add-course hr{
+    top: -10px;
+    border: 1px solid grey;
 }
 
 .signup_login {
@@ -80,14 +113,14 @@ hr:before {
 .signup_login input, .signup_login button {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
-    padding: 0.8em 1em 0.5em;
-
+    padding: 0.8em 1em 0.5em;   
     width: 100%;
 }
 
-#SignUpWithEmail, #login {
+#SignUpWithEmail, #login, .submit {
     background-color: #00AEFF;
     color: white;
+    padding: 0.8em 1em 0.5em;
 }
 
 #SignUpWithGoogleEmail img {
@@ -98,4 +131,305 @@ hr:before {
 
 .login-form p {
     text-align: right;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #eee;
+}
+
+#header img {
+    margin-bottom: 0;
+    height: 40px;
+    width: auto;
+}
+
+#header form, .faq-searchform {
+    width: 50%;
+    position: relative;
+}
+
+
+#header span, .faq-searchform span {
+    position: absolute;
+    left: 10rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #00AEFF;
+}
+
+#header input, #footer input, #footer .submit, .faq-searchform input {
+    padding: 1rem 1.4rem;
+    border: 1px solid #00AEFF;
+}
+.submit-class{
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    background-color: #00AEFF;
+    color: white;
+    padding: 0.8em 1em 0.5em;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+#header input::placeholder, #footer input::placeholder {
+    color: #777;
+    display: none;
+    width: 30px;
+}
+
+.back-nav {
+    padding: 2rem 3rem;
+    background: #00AEFF;
+    color: white;
+}
+
+
+.course-page, .faq-page {
+    width: 80%;
+    margin: 4rem auto;
+    max-width: 910px;
+}
+
+.course-page main, .course-page aside {
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    vertical-align: top;
+}
+
+.course-page input[type="file"] {
+    margin-bottom: 1.5rem;
+}
+
+.courses h2 {
+    vertical-align: sub;
+    font-weight: normal;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+
+.courses h2 span {
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    vertical-align: sub;
+    display: none;
+}
+
+.reaction1 span{
+    position: absolute;
+    margin-top: -4.5px;
+    margin-left: 2px;
+}
+.reaction2 span{
+    position: absolute;
+    margin-top: -4.5px;
+    margin-left: 2px;
+}
+.reaction2{
+    position: relative;
+    padding-left: 120px;
+    bottom: 40px;
+}
+
+.courses h2:hover {
+    color: #00AEFF;
+}
+
+.courses h2:hover span {
+    display: inline;
+}
+
+#footer {
+    width: 100%;
+    background: #00AEFF;
+    color: white;
+    padding: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer div {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 3rem;
+    
+}
+#footer li {
+    display: inline-block;
+}
+
+#footer h2 {
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+}
+
+#footer .submit {
+    background: black;
+}
+
+
+.faq-page li {
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 4px 5px -2px #aaa;
+    margin: 1rem 4%;
+    padding: 2rem;
+}
+
+.faq-page summary {
+    margin-bottom: 0.5rem;
+}
+
+.faq-searchform {
+    margin: 0 auto;
+}
+
+
+.profile {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #00AEFF;
+    color: white;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.profile li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.add-course, .community {
+    padding: 3rem 1.5rem;
+}
+.add-course label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.add-course input, .add-course select, .add-course textarea {
+    padding: 1rem;
+    width: 100%;
+}
+
+.add-course label span {
+    color: red;
+}
+
+.community aside {
+    margin-bottom: 2rem;
+}
+
+.community aside a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.community aside ul {
+    border: 1px solid #00AEFF;
+    margin-top: 1rem;
+}
+
+.community aside li {
+    border-bottom: 1px solid #00AEFF;
+    padding: 0.5rem 1.5rem;
+}
+
+.community .topic {
+    color: white;
+    background: #00AEFF;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+@media screen and (min-width: 1000px) {
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    #footer div {
+        margin-bottom: 0;
+    }
+        
+    .course-page aside {
+        max-height: 380px;
+        overflow-y: scroll;
+    }
+
+    .faq-page li {
+        width: 40%;
+    }
+
+    .profile {
+        width: 30%;
+        float: left;
+        /* min-height: 100%; */
+        position: absolute;
+        height: 100%;
+    }
+
+    .add-course {
+        width: 70%;
+        position: relative;
+        left: 30%;
+    }
+    .profile li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .add-course form {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .add-course label {
+        display: inline-block;
+        width: 25%;
+    }
+
+    .add-course input, .add-course select, .add-course textarea {
+        width: 70%;
+        vertical-align: top;
+    }
+
+    .community aside {
+        width: 24%;
+        vertical-align: top;
+    }
+
+    .community main {
+        width: 40%;
+        margin: 0 5%;
+    }
+
+    .community aside, .community main {
+        display: inline-block;
+    }
+
 }
