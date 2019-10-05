@@ -10,6 +10,24 @@ button {
     border: 0 none;
 }
 
+.container {
+    position: relative;
+}
+
+.container:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-color {
+    color: #00AEFF;
+}
+
 li {
     list-style-type: none;
 }
@@ -31,7 +49,10 @@ body {
     color: #00AEFF
 }
 
-p, h1, img, button {
+p,
+h1,
+img,
+button {
     margin-bottom: 24px;
 }
 
@@ -82,15 +103,18 @@ hr:before {
     margin-bottom: 1em;
 }
 
-.signup_login input, .signup_login button {
+.signup_login input,
+.signup_login button {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
     padding: 0.8em 1em 0.5em;
-    
+
     width: 100%;
 }
 
-#SignUpWithEmail, #login, .submit {
+#SignUpWithEmail,
+#login,
+.submit {
     background-color: #00AEFF;
     color: white;
     padding: 0.8em 1em 0.5em;
@@ -121,19 +145,25 @@ hr:before {
     width: auto;
 }
 
-#header form {
+#header form,
+.faq-searchform {
     width: 50%;
     position: relative;
 }
 
-#header span {
+
+#header span,
+.faq-searchform span {
     position: absolute;
     right: 1rem;
     font-size: 2rem;
     color: #777;
 }
 
-#header input, #footer input, #footer .submit {
+#header input,
+#footer input,
+#footer .submit,
+.faq-searchform input {
     width: 100%;
     padding: 1rem 1.4rem;
     border: none;
@@ -143,7 +173,8 @@ hr:before {
     border-radius: 50%;
 }
 
-#header input::placeholder, #footer input::placeholder {
+#header input::placeholder,
+#footer input::placeholder {
     color: #777;
     display: none;
     width: 30px;
@@ -156,13 +187,15 @@ hr:before {
 }
 
 
-.course-page {
+.course-page,
+.faq-page {
     width: 80%;
     margin: 4rem auto;
     max-width: 910px;
 }
 
-.course-page main, .course-page aside {
+.course-page main,
+.course-page aside {
     display: inline-block;
     width: 100%;
     max-width: 450px;
@@ -203,15 +236,15 @@ hr:before {
     padding: 2rem;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 1.5em;
 }
 
 #footer div {
     width: 100%;
     max-width: 380px;
     margin-bottom: 3rem;
-    
+
 }
+
 #footer li {
     display: inline-block;
 }
@@ -225,6 +258,73 @@ hr:before {
     background: black;
 }
 
+
+.faq-page li {
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 4px 5px -2px #aaa;
+    margin: 1rem 4%;
+    padding: 2rem;
+}
+
+.faq-page summary {
+    margin-bottom: 0.5rem;
+}
+
+.faq-searchform {
+    margin: 0 auto;
+}
+
+
+.profile {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #00AEFF;
+    color: white;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.profile li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.add-course {
+    padding: 3rem 1.5rem;
+}
+
+.add-course label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.add-course input,
+.add-course select,
+.add-course textarea {
+    padding: 1rem;
+    width: 100%;
+}
+
+.add-course label span {
+    color: red;
+}
+
+
 @media screen and (min-width: 1000px) {
 
     #footer {
@@ -237,9 +337,49 @@ hr:before {
         margin-bottom: 0;
     }
 
-        
+
     .course-page aside {
         max-height: 380px;
         overflow-y: scroll;
+    }
+
+    .faq-page li {
+        width: 40%;
+    }
+
+    .profile {
+        width: 30%;
+        float: left;
+        /* min-height: 100%; */
+        position: absolute;
+        height: 100%;
+    }
+
+    .add-course {
+        width: 70%;
+        position: relative;
+        left: 30%;
+    }
+
+    .profile li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .add-course form {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .add-course label {
+        display: inline-block;
+        width: 25%;
+    }
+
+    .add-course input,
+    .add-course select,
+    .add-course textarea {
+        width: 70%;
+        vertical-align: top;
     }
 }
