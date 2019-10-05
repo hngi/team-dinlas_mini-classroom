@@ -16,8 +16,8 @@
     <div class="signup-container signup_login">
         <header>
             <a href="index.php"><img src="assets/logo.png" alt="Team Dinlas"></a>
-            <h1>Reach out & Teach thousands of Students</h1>
-            <p>Already signed up? <a href="teacher_login.php">Log In</a></p>
+            <h1>Reach out & to many resources & students!</h1>
+            <p>Already signed up? <a href="login_page.php">Log In</a></p>
             <br>
             <?php 
             include 'includes/functions.php';
@@ -25,11 +25,9 @@
             echo showAlert(); ?>
             
         </header>
-        <form action="teacher_signup_post.php" method="POST" class="signup-form">  
-            <button id="SignUpWithGoogleEmail"> <img src="assets/google-logo.png" alt=""> Continue with Google</button>
+        <form action="signup.php" method="POST" class="signup-form">  
+            <!-- <button id="SignUpWithGoogleEmail"> <img src="assets/google-logo.png" alt=""> Continue with Google</button> -->
             
-            <hr>
-
             <label for="fullname">
                 <input type="text" name="fullname" id="fullname" placeholder="Full Name">
             </label>
@@ -51,13 +49,11 @@
             </label>
 
             <label for="type">
-            <select name="type">
+            <select name="type" required>
                 <option value="student">Student</option>
                 <option value="teacher">Teacher</option>
             </select>
             </label>
-
-            <p>By clicking "Continue with Google/Email" above, you acknowledge that you have read and understood, and agree to Lucid's <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
 
             <button id="SignUpWithEmail" name="signup" type="submit">Continue with Email</button>
             

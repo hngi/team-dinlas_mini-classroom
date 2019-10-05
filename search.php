@@ -24,8 +24,13 @@ include 'includes/header.php';
 ?>
     <div class="container-fluid">
         <?php
+        if($_SESSION['type'] == 'teacher'){
 include 'includes/teacher_sidebar.php';
-?>
+        }else{
+include 'includes/student_sidebar.php';
+
+        } 
+        ?>
         <main class="add-course">
             <h1 class="text-center main-color">Search for  '<?php echo $q ?>'</h1>
 
