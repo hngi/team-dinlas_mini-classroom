@@ -1,0 +1,106 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   
+Title:    CSS Document
+*/
+
+h1,h2,h3,h4,h5,h6,img,p,table,tr,td,span,strong,label,input,select,section,div,header,textarea{margin:0; padding:0;}
+a img{border:none;}
+a{text-decoration:none; margin:0; padding:0; outline:none; color: inherit;}
+ul,li{list-style-type: none; padding: 0; margin: 0;}
+table td {vertical-align: top;}
+
+html {
+  box-sizing: border-box;
+  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*div, section, p, {
+  box-sizing: content-box;
+}
+*/
+body{
+    width: 100%;
+    margin:0; padding:0;
+    margin: 0 auto 0 auto; 
+}
+
+.barCon{
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 15px;
+}
+.bar1{
+    height: 10px;
+    background-color: #a0a0a0;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.bar2{
+    height: 10px;
+    background-color: #00aeff;
+    border-radius: 10px;
+    
+}    
+
+.barClass{
+   width: 100%;
+   margin-bottom: 20px;
+}
+.barClass:after{
+   content: '';
+   display: table;
+   clear: both;
+}
+.barClass div {
+   float: left;
+   width: 25%;
+   display: inline;
+   border-right: 1px solid #00aeff;
+   font-size: 12px;
+   text-align: center;
+}
+.barButt{
+   width: 30%;
+   margin: 0 auto;  
+}
+.barButt button{
+   margin-top: 28px;
+   width: 100%;
+   background-color: #00aeff;
+   border: none;
+   border-radius: 5px;
+   color: #fff;
+   padding: 4px;
+   font-size: 15px;
+}
+.barButt button:hover{
+   background-color: #00a4f2;
+   border: none;
+}
+
+
+
+
+
+/************* style display for screen not more than 509px and min of 300px     Breakpoint 4  ******/
+@media (min-width: 200px) and (max-width:550px) {
+ 
+.barButt{
+   width: 70%;
+    
+}   
+.barButt button{
+   
+   font-size: 12px;
+}
+
+
+}   
