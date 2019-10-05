@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+            <a  href=""><img  src="https://raw.githubusercontent.com/hngi/team-dinlas_mini-classroom/develop/assets/logo.png" height="60"></a>
+	
+            <h2 class="text-center mt-3">Contact Us</h2>
+              <p class="subtext text-center mt-3"><i>Kindly get in touch! Promise to get back within 48 hours</i></p>
+                <div id="contact ">
+                      <div class="form offset-md-4 offset-sm-2">
+                          <form action="contact.php" method="POST">
+                              <div>
+                                <label for="labeTitle">Title</label>
+                                <select id="labelTitle" name="email_title" required>
+                                  <option value="" selected="selected">Please choose</option>
+                                  <option value="Questions">Questions</option>
+                                  <option value="Suggestions">Suggestions</option>
+                                  <option value="Complaints">Complaints</option>
+                                  <option value="Feedback">Feedback</option>
+                                </select>
+                              </div>
+                              <div>
+                                <label for="labelName">Name</label>
+                                <input type="text" name="visitor_name" id="labelName" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+                                	
+</div>
+                              <div>
+                                <label for="labelEmail">Email</label>
+                                <input type="email" name="visitor_email" id="labelEmail" placeholder="example@gmail.com" required>
+                                	
+                                </div>
+                              <div>
+                                <label for="labelMessage">Message</label>
+                                <textarea id="labelMessage" name="visitor_message" rows="10" cols="60" placeholder="Type message here ..." minlength="10" required></textarea>
+                              </div>
+                              <div>
+                                <input type="submit" name="Submit" value="Send">
+                              </div>  
+                          </form>
+                          <p><a href="index.php"> < < Go back Home</a></p>
+                      </div>
+                </div>
+            </div>
+          </div>
+          </div>
+       </div>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
