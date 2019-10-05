@@ -1,0 +1,50 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.contact-form
+{
+	box-shadow: 0 0 4px 0 rgba(0,0,0,5);
+	margin: 50px auto;
+	width: 350px;
+	text-align: center;
+}
+.contact-form h2
+{
+	background: #efefef;
+	margin-top: 0;
+	padding: 10px;
+}
+.contact-form input
+{
+	display: block;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+}
+.contact-form textarea
+{
+	width: 90%;
+	margin: 5px auto;
+	padding: 10px;
+	height: 80px;
+}
+.contact-form submit-btn
+{
+	cursor: pointer;
+	width: 150px !important;
+	margin-left: 18px !important;
+}
+.g-recaptcha
+{
+	margin: 10px;
+	padding: 10px;
+}
+.status
+{
+	font-size: 15px;
+	color: lightblue;
+	padding: 15px;
+}
