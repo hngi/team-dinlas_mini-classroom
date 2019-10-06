@@ -1,3 +1,4 @@
+
 <?php session_start();
 
 //Proper Database configuration here
@@ -40,6 +41,18 @@ include 'includes/teacher_sidebar.php';
                         <option value="expert">Expert</option>
                     </select>
                 </p>
+                 <!-- Changes Made 1-->
+                <p>
+                    <label for="category">Course Category <span>*</span></label>
+                    <select name="category" id="category" required>
+                        <option value="software">Software</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="design">Design</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="marketing">Other</option>
+                    </select>
+                </p>
+                <!--/ Changes Made 1-->
                 <p>
                     <label for="youtube">Image Thumbnail <span>*</span>  </label>
                     <input type="file" name="thumb" required>
