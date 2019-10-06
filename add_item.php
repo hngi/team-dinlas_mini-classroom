@@ -69,6 +69,8 @@ include 'includes/teacher_sidebar.php';
         </main>
     </div>
 
+    <!-- scripts -->
+    <script src="assets/ckeditor5/ckeditor.js"></script>
     <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
     <script>
         tinymce.init({selector:'textarea'});

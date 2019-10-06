@@ -20,6 +20,7 @@ $tid = $_SESSION['id'];
                 <li><a href="teacher_dashboard.php">Dashboard</a></li>
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="classes.php">My Classes</a></li>
+                <li><a href="https://dinlas-question-blog.herokuapp.com/qBlog">Question-Blog</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
 </aside>

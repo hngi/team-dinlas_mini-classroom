@@ -73,6 +73,7 @@ include 'includes/teacher_sidebar.php';
         tinymce.init({selector:'textarea'});
     </script>
 <!--     
+
     <script src="assets/ckeditor5/ckeditor.js"></script>
     <script src="assets/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="assets/tinymce/js/tinymce/jquery.tinymce.min.js"></script>
