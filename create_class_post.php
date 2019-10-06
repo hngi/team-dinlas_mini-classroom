@@ -6,6 +6,7 @@ include 'includes/functions.php';
 
 if(isset($_POST['create'])){
     // $content = $_POST['content'];
+    $category = $_POST['category'];
     $level = $_POST['level'];
     $title = $_POST['title'];
     $desc = $_POST['desc'];
@@ -27,9 +28,9 @@ if(isset($_POST['create'])){
     }else{
 
         if(empty($_FILES['thumb']['tmp_name'])){
-        mysqli_query($con, "INSERT INTO class SET title = '$title', teacher_id = '$teacher_id', level = '$level', description = '$desc'")or die(mysqli_error($con));
+        mysqli_query($con, "INSERT INTO class SET title = '$title', teacher_id = '$teacher_id', level = '$level', description = '$desc', category = '$category'")or die(mysqli_error($con));
         }else{
-        mysqli_query($con, "INSERT INTO class SET title = '$title', teacher_id = '$teacher_id', level = '$level', description = '$desc', class_thumbnail = '$target_file'")or die(mysqli_error($con));
+        mysqli_query($con, "INSERT INTO class SET title = '$title', teacher_id = '$teacher_id', level = '$level', description = '$desc', category = '$category', class_thumbnail = '$target_file'")or die(mysqli_error($con));
         //after sql query
         move_uploaded_file($_FILES['thumb']['tmp_name'], $target_file);
         }
