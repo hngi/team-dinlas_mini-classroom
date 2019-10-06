@@ -3,6 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+        content="Di-Class connects students with expert teachers & provides unlimited resources fro learning for free!">
+    <meta name="keywords" content="teach, student, learn, free course, tutors, education" />
+    <meta property="og:title" content="Di-Class" />
+    <meta property="og:image"
+        content="assets/logo.png" />
+    <meta property="og:description"
+        content="Di-Class connects students with expert teachers & provides unlimited resources fro learning for free!" />
 	<title>DiClass</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -15,6 +23,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
 	<link href="assets/landing-page.min.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -37,13 +46,13 @@
 					<a class="nav-link" href="faq.html">FAQ</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link text-bolded" href="teacher_signup.php">Become a tutor</a>
+					<a class="nav-link" href="contact.html">Contact</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="student_login.php">Student</a>
+					<a class="nav-link" href="login_page.php">Login</a>
 			</li>
 			<li class="nav-item">
-					<a class="nav-link" href="teacher_login.php">Teacher</a>
+					<a class="nav-link" href="signup_page.php">Sign Up</a>
 			</li>
 		</ul>
 	</div>
@@ -59,11 +68,10 @@
 </div>
 <div class="caption text-center">
 	<h1>Learn from Expert Tutors without paying a dime!</h1>
-  <h5>Engage on one-on-one with a tutor and get hands on training</h5>
+  <h5>Engage one-on-one with a tutor and get hands on training</h5>
   <br>
   
-<a href="teacher_signup.php" class="btn btn-info btn-lg"> <i class="icon-user"></i> Start Teaching</a>  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-<a href="student_signup.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Start Learning</a> 
+<a href="signup_page.php" class="btn btn-info btn-lg"><i class="icon-graduation"></i> Take your first Step</a> 
 </div>
 
 <!-- Icons Grid -->
@@ -109,7 +117,7 @@
         <div class="col-xl-9 mx-auto">
                 <h2>Get personalized recommendations</h2>
 			<p>Answer a few questions for your top picks and  get recommendations suited to you.</p>
-			<a class="btn btn-secondary btn-md" href="#Get-started">Get Started</a>
+			<a class="btn btn-secondary btn-md" href="signup_page.php">Get Started</a>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
     

@@ -131,6 +131,9 @@ include 'includes/student_sidebar.php';
                 <div class="card" style="margin-top: 30px;">
                     <div class="card-header bg-info text-light"><i class="fa fa-book text-light"></i> Lecture #<?php echo $i ?>  <span style="float: right"><?php echo date("l j, M Y - h:i A", strtotime($row['date_added'])); ?></span>  </div>
                     <div class="card-body">
+                    <p>
+                        <h3 class="text-center"><b><u><?php echo $row['item_title'] ?> </u></b></h3>
+                    </p>
                         <p>
                             <?php echo $row['content'] ?>
                         </p>

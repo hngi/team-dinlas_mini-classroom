@@ -9,7 +9,7 @@ isStudent();
 
 $student_id = $_SESSION['id'];
 
-$pageTitle = 'Teacher Dashboard';
+$pageTitle = 'Student Dashboard';
 include 'includes/head.php';
 
 ?>

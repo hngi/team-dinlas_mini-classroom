@@ -104,6 +104,7 @@ hr:before {
 }
 
 .signup_login input,
+.signup_login select,
 .signup_login button {
     border: 1px solid #00AEFF;
     font-size: 1.2rem;
@@ -111,6 +112,15 @@ hr:before {
 
     width: 100%;
 }
+
+/* signup_login input,
+.signup_login button {
+    border: 1px solid #00AEFF;
+    font-size: 1.2rem;
+    padding: 0.8em 1em 0.5em;
+
+    width: 100%;
+} */
 
 #SignUpWithEmail,
 #login,
@@ -261,12 +271,27 @@ hr:before {
 
 .faq-page li {
     display: inline-block;
+    vertical-align: top;
     width: 100%;
     box-shadow: 0 4px 5px -2px #aaa;
     margin: 1rem 4%;
     padding: 2rem;
 }
 
+label {
+    width: 100%;
+    margin-bottom: 0;
+}
+.fa, .fd{
+padding: 15px;
+font-size: 25px !important;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.fa:hover {
+    color: black;
+}
 .faq-page summary {
     margin-bottom: 0.5rem;
 }
